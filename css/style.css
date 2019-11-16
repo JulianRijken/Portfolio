@@ -1,7 +1,19 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(roboto);
+  font-weight: normal;
+  font-style: normal;
+}
+
+div {
+  font-family: myFirstFont;
+}
+
 body 
 {
   margin: 0;
-  font-family: roboto;
+  font-family: myFirstFont;
   background: rgb(27, 27, 27);
 }
 
