@@ -5,7 +5,7 @@ div {
 body 
 {
   margin: 0;
-  background: rgb(27, 27, 27);
+  background: rgba(14,14,14,1.00);
 }
 
 .project
@@ -25,9 +25,10 @@ body
 
 .topnav 
 {
+  font-family: lato;
   overflow: hidden;
   background-color:  #111111;
-  padding: 0px 0px;
+  padding: 0px 10px;
 }
 
 .topnav a 
