@@ -1,19 +1,10 @@
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(roboto);
-  font-weight: normal;
-  font-style: normal;
-}
-
 div {
-  font-family: myFirstFont;
+  font-family:lato;
 }
 
 body 
 {
   margin: 0;
-  font-family: myFirstFont;
   background: rgb(27, 27, 27);
 }
 
