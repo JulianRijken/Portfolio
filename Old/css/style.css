@@ -1,0 +1,73 @@
+div {
+  font-family:lato;
+}
+
+body 
+{
+  margin: 0;
+  background: rgba(14,14,14,1.00);
+}
+
+.project
+{
+    overflow: hidden;
+    padding: 0px 0px 200px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topSpace
+{
+    padding: 100px;
+}
+
+.topnav 
+{
+  font-family: lato;
+  overflow: hidden;
+  background-color:  #111111;
+  padding: 0px 10px;
+}
+
+.topnav a 
+{
+  float: left;
+  color: #8a8a8a;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.topnav a:hover 
+{
+  color: rgb(177, 177, 177);
+}
+
+.topnav a.active 
+{
+  color: rgb(255, 255, 255);
+  font-style:inherit;
+}
