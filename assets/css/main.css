@@ -124,7 +124,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #ffffff;
 	}
 
 	i, em {
@@ -1995,21 +1995,21 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: #111211;
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #303030;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: #1f1f1f;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
+			background-color: #383838;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
@@ -2036,7 +2036,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: #181818;
 		text-align: center;
 		position: fixed;
 		left: 0;
