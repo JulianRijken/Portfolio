@@ -72,6 +72,34 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Julian */
+
+.largeText {
+	font-style: normal;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+
+.mediumText {
+	font-style: normal;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	font-size: x-large;
+	margin-bottom: 20px;
+}
+
+.smallText {
+	font-style: normal;
+	font-weight: 600;
+	color: rgb(173, 173, 173);
+	text-align: left;
+	line-height: 1.3;
+}
+
 /* Basic */
 
 	html {
@@ -1911,7 +1939,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
+		background: rgb(27, 27, 27);
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
@@ -1988,14 +2016,14 @@ input, select, textarea {
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #111211;
+			background-color: #1b1b1b;
 		}
 
 		.wrapper.style2 {
