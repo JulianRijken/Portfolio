@@ -77,6 +77,7 @@ input, select, textarea {
 .largeText {
 	font-style: normal;
 	font-weight: bold;
+	line-height: 1;
 	font-size: 4em;
 	color: rgb(255, 255, 255);
 	text-align: left;
@@ -106,14 +107,12 @@ input, select, textarea {
 
 .textBox
 {
-	background: rgb(22, 22, 22);
 	text-align: center;
 	padding: 2em;
-
 }
 
 .textBox.style1 {
-	padding: 3em 2em 3.5em 1em;
+	padding: 1em 2em 0em 1em;
 }
 
 
@@ -591,7 +590,7 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 25px 0 0 25px;
+				padding: 15px 0 0 15px;
 			}
 
 			.row.gtr-uniform {
@@ -2042,23 +2041,23 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #131313;
+			background-color: #1d1d1d;
 		}
 
 		.wrapper.style2 {
-			background-color: #303030;
-			text-shadow: 1px 1px 0px #fff;
+		
+			background-image: none;
+			background-color: #131313;
 		}
 
 		.wrapper.style3 {
-			background-color: #1f1f1f;
-			text-shadow: 1px 1px 0px #fff;
+			background-image: none;
+			background-color: #0f0f0f;
 		}
 
 		.wrapper.style4 {
-			background-color: #383838;
-			color: #999;
-			text-shadow: -1px -1px 0px #181818;
+			background-image: none;
+			background-color: #0c0c0c;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
