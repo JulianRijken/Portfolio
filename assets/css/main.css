@@ -22,6 +22,7 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+	  
 
 body {
 	line-height: 1;
@@ -30,6 +31,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 
 blockquote, q {
 	quotes: none;
@@ -106,7 +108,7 @@ input, select, textarea {
 }
 
 .textBox.style1 {
-	padding: 1em 2em 0em 1em;
+	padding: 1em 2em 2em 1em;
 }
 
 
@@ -296,12 +298,15 @@ input, select, textarea {
 	}
 
 	hr {
-		border: 0;
-		border-top: solid 1px #444;
-		border-top-color: rgba(0, 0, 0, 0.35);
-		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
-		height: 1px;
-		margin: 3em 0;
+
+		width: 101%;
+		height: 4px;
+		margin-left: -11px;
+		margin-right: auto;
+		background-color: 	#1f2b29;
+		border: 0 none;
+		margin-top: 100px;
+		margin-bottom:100px;
 	}
 
 	p, ul, ol, dl, table {
@@ -2034,29 +2039,29 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #1d1d1d;
+			background-color: #1f2b29;
 		}
 
 		.wrapper.style2 {
 		
 			background-image: none;
-			background-color: #131313;
+			background-color: 	#141b1a;
 		}
 
 		.wrapper.style3 {
 			background-image: none;
-			background-color: #0f0f0f;
+			background-color: 	#1a2422;
 		}
 
 		.wrapper.style4 {
 			background-image: none;
-			background-color: #0c0c0c;
+			background-color: 	#282f30;
 		}
 
 /* Nav */
 
 	#nav {
-		background-color: #181818;
+		background-color: 	#141b1a;
 		text-align: center;
 		position: fixed;
 		left: 0;
