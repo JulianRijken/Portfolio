@@ -46,6 +46,7 @@
 		<article id="portfolio" class="wrapper style2">		
 			<div class="container">
 
+				
 				<!-- Train Trouble --> 
 				<div class="row">
 
@@ -111,60 +112,65 @@
 				<hr>
 
 
+
 				<!-- Twin Stick --> 
-				<div class="row">
-
-						<!-- Text --> 
-						<div class="col-7 col-6-medium col-12-small">
-							<article class="textBox style1">
-								<h1 class="largeText">Twin Stick Shooter</h1>
-								<h4 class="mediumText">What I did:</h4>
-								<p class = smallText>
-									This project I learned about character movement, animations, blend trees, inventory, item usage, shooting, and HDRP.
-								</p>
-								<h4 class="mediumText">About the game:</h4>
-								<p class = smallText>
-									Twin stick shooter game based in a underwater lab.
-								</p>
-								
-								<p class = smallText>
-									• Engine: Unity <br>
-									• Language: C#<br>
-									• Programmers: Julian Rijken, Enzo Marguerink<br>
-									• Artists: Joost Verbaarschot, Quin
-								</p>										
-							</article>				
-						</div>
-					
-
-						<!-- Right --> 
-						<div class="col-5 col-6-medium col-12-small">	
+				<div id="twinStick" class="project">
+					<span style="font-size:30px;cursor:pointer" onclick="openNav('twinStick')"> <h1 class="largeText"> &#9776;  Twin Stick Shooter</h1> </span>
+		
+					<div class="row">
 	
-								<div class="col-5 col-6-medium col-6-small">	
-									<a class="image featured"></a><iframe width="100%" height="300" src="https://www.youtube.com/embed/dx7T_7TizCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>	
-								</div>
-
-								<div class="col-5 col-6-medium col-6-small">	
-									<a class="image featured"><img src="assets/images/Projects/Twinstick/rat.jpg" alt="" /></a>		
-								</div>
-												
-						</div>
-			
-					
-						<!-- Bottom Images --> 											
-						<div class="col-4 col-6-medium col-4-small">				
-							<a class="image featured"><img src="assets/images/Projects/Twinstick/slide.jpg" alt="" /></a>		
-						</div>
-
-						<div class="col-4 col-6-medium col-4-small">				
-							<a class="image featured"><img src="assets/images/Projects/Twinstick/flame.png" alt="" /></a>		
-						</div>	
-
-						<div class="col-4 col-6-medium col-4-small">				
-							<a class="image featured"><img src="assets/images/Projects/Twinstick/gun.png" alt="" /></a>		
-						</div>	
-								
+							<!-- Text --> 
+							<div class="col-7 col-6-medium col-12-small">
+								<article class="textBox style1">
+									<h4 class="mediumText">What I did:</h4>
+									<p class = smallText>
+										This project I learned about character movement, animations, blend trees, inventory, item usage, shooting, and HDRP.
+									</p>
+									<h4 class="mediumText">About the game:</h4>
+									<p class = smallText>
+										Twin stick shooter game based in a underwater lab.
+									</p>
+									
+									<p class = smallText>
+										• Engine: Unity <br>
+										• Language: C#<br>
+										• Programmers: Julian Rijken, Enzo Marguerink<br>
+										• Artists: Joost Verbaarschot, Quin
+									</p>										
+								</article>				
+							</div>
 						
+	
+							<!-- Right --> 
+							<div class="col-5 col-6-medium col-12-small">	
+		
+									<div class="col-5 col-6-medium col-6-small">	
+										<a class="image featured"></a><iframe width="100%" height="300" src="https://www.youtube.com/embed/dx7T_7TizCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>	
+									</div>
+	
+									<div class="col-5 col-6-medium col-6-small">	
+										<a class="image featured"><img src="assets/images/Projects/Twinstick/rat.jpg" alt="" /></a>		
+									</div>
+													
+							</div>
+				
+						
+							<!-- Bottom Images --> 											
+							<div class="col-4 col-6-medium col-4-small">				
+								<a class="image featured"><img src="assets/images/Projects/Twinstick/slide.jpg" alt="" /></a>		
+							</div>
+	
+							<div class="col-4 col-6-medium col-4-small">				
+								<a class="image featured"><img src="assets/images/Projects/Twinstick/flame.png" alt="" /></a>		
+							</div>	
+	
+							<div class="col-4 col-6-medium col-4-small">				
+								<a class="image featured"><img src="assets/images/Projects/Twinstick/gun.png" alt="" /></a>		
+							</div>	
+									
+							
+					</div>
+
 				</div>
 
 
@@ -547,6 +553,7 @@
 				</div>						
 								
 
+				
 								
 				
 			</div>
@@ -611,6 +618,25 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<script>
+
+			function openNav(id) 
+			{
+			
+			  var project = document.getElementById(id).style;
+			
+			  if(project.maxHeight == '1500px')
+			  {
+				  project.maxHeight = "100px";
+			  }
+			  else
+			  {
+				  project.maxHeight = "1500px";
+			  }
+			
+			}
+			
+		</script>
 
 	</body>
 </html>
