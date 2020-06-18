@@ -22,16 +22,24 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
-
             <a class="navbar-brand d-lg-none js-scroll-trigger" href="#projects">
                 <span class="d-block d-lg-none">Julian Rijken</span>           
             </a>
 
-           
+            <div class="social-icons-nav">
+                <a class="social-icon-nav" href="https://www.linkedin.com/in/julian-rijken-15082618b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon-nav" href="https://steamcommunity.com/id/Julianrijken" target="_blank"><i class="fab fa-steam"></i></a>
+                <a class="social-icon-nav" href="https://github.com/JulianRijken" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="social-icon-nav" href="https://www.youtube.com/channel/UCBITNAEkmf_zHhbcnH8fQKA" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon-nav" onclick="CopyText()"><i class="fab fa-discord"></i></a>
+                <a class="social-icon-nav" href="https://sketchfab.com/julianrijken" target="_blank"><img src="assets/img/icons/SketchFab-Logo.png" style="width:25px;height:25px;"></a>
+                <a class="social-icon-nav nav-link js-scroll-trigger" href="#contact"><i class="fas fa-envelope"></i></a>
+            </div>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-     
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">projects</a></li>
@@ -40,6 +48,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
                 </ul>
             </div>
+                        
+                    
         </nav>
 
         <!-- Page Content-->
@@ -64,7 +74,7 @@
                                             <div class="portfolio-hover-content"><i class="fa fa-gamepad fa-4x"></i></div>
                                         </div>
                                         
-                                        <img class="img-fluid" src="assets/img/portfolio/TrainTrouble/tt-settings.png" alt=""/>
+                                        <img class="img-fluid" src="assets/img/portfolio/TrainTrouble/tt-tower.png" alt=""/>
                                     </a>
 
                                     <div class="portfolio-caption">
@@ -73,8 +83,28 @@
                                     </div>
 
                                 </div>
-                            </div>      
-                          
+                            </div>     
+
+                            <!-- Project Tumbnail-->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="portfolio-item">
+
+                                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                        <div class="portfolio-hover">
+                                            <div class="portfolio-hover-content"><i class="fa fa-gamepad fa-4x"></i></div>
+                                        </div>
+                                        
+                                        <img class="img-fluid" src="assets/img/portfolio/TrainTrouble/tt-tower.png" alt=""/>
+                                    </a>
+
+                                    <div class="portfolio-caption">
+                                        <div class="portfolio-caption-heading">TrainTrouble</div>
+                                        <div class="portfolio-caption-subheading text-muted">Unity C#</div>
+                                    </div>
+
+                                </div>
+                            </div> 
+        
 
                         </div>                 
                     </section>
@@ -272,6 +302,72 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
+
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">TrainTrouble</h2>
+                                    <br>
+                                    <br>
+                                    <div class="projectDescriptions">
+                                        <b class="projectDescription-bold">Engine</b>
+                                        <b class="projectDescription-bold">Language</b>
+                                        <b class="projectDescription-bold">Programmer</b>
+                                        <b class="projectDescription-bold">Artists</b>
+                                    </div>
+
+                                    <hr style="background-color: rgba(0, 0, 0, 0);">
+
+                                    <div class="projectDescriptions">
+                                        <a class="projectDescription">Unity</a>
+                                        <a class="projectDescription">C#</a>
+                                        <a class="projectDescription">Julian Rijken</a>
+                                        <a class="projectDescription">Justin Knobbout</a>
+                                    </div>
+
+                                    <hr>
+                                    <div class="projectDescriptions">
+                                        <a class="projectDescription"></a>
+                                        <a class="projectDescription"></a>
+                                        <a class="projectDescription"></a>
+                                        <a class="projectDescription">Jonne Keizer</a>
+                                    </div>
+
+                                    <hr>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                                    
+                                    <h3 class="text-uppercase">What i did</h3>
+
+                                    <p>I was responsible for programming the entire game as a solo developer. I was confronted with buffering lists for the train wagons and because it was the first time I worked with 2 others on a unity projects, I learned a lot about Git in the progress.</p>
+
+                                    <br>
+                                    <h3 class="text-uppercase">About the game</h3>
+                                    <p>Train trouble is an action packed local multiplayer game. You have to get as many passengers to their destination while, at the same time, competing against other players.</p>
+
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fab fa-github mr-1"></i>View on Github</button>
+                                    <br>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <br>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xjEpr01QcGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <img src="assets/img/portfolio/TrainTrouble/tt-sighn.png" style="width:560px;height:315px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modals--><!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                    <div class="close-modal" data-dismiss="modal"><i class="fa fa-times fa-3x"></i></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
@@ -294,9 +390,6 @@
 
 
 
-
-
-
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -304,7 +397,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+
+
+        <input class="discord" type="text" value="Julian#4680" id="myInput">    
+        <script>
+            function CopyText() {
+                var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                alert("Copied the text: " + copyText.value);
+            }
+        </script>
 
 
     </body>
+    
 </html>
+
