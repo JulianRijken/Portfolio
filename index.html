@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/customStyles.css" rel="stylesheet" />
     </head>
 
     <body id="page-top">
@@ -25,21 +26,22 @@
             <a class="navbar-brand d-lg-none js-scroll-trigger" href="#projects">
                 <span class="d-block d-lg-none">Julian Rijken</span>           
             </a>
-
-            <div class="social-icons-nav">
+            
+            <div class="social-icons-nav navbar-toggler custom-icons">
                 <a class="social-icon-nav" href="https://www.linkedin.com/in/julian-rijken-15082618b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon-nav" href="https://sketchfab.com/julianrijken" target="_blank"><span class="sketchfab-logo"></a>
+                    <a class="social-icon-nav nav-link js-scroll-trigger" href="#contact"><i class="fas fa-envelope"></i></a>
+                    <a class="social-icon-nav" href="https://github.com/JulianRijken" target="_blank"><i class="fab fa-github"></i></a>
                 <a class="social-icon-nav" href="https://steamcommunity.com/id/Julianrijken" target="_blank"><i class="fab fa-steam"></i></a>
-                <a class="social-icon-nav" href="https://github.com/JulianRijken" target="_blank"><i class="fab fa-github"></i></a>
                 <a class="social-icon-nav" href="https://www.youtube.com/channel/UCBITNAEkmf_zHhbcnH8fQKA" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a class="social-icon-nav" onclick="CopyText()"><i class="fab fa-discord"></i></a>
-                <a class="social-icon-nav" href="https://sketchfab.com/julianrijken" target="_blank"><img src="assets/img/icons/SketchFab-Logo.png" style="width:25px;height:25px;"></a>
-                <a class="social-icon-nav nav-link js-scroll-trigger" href="#contact"><i class="fas fa-envelope"></i></a>
+                <a class="social-icon-nav" onclick="CopyText()"><i class="fab fa-discord" style="cursor: pointer;"></i></a>
             </div>
-
+          
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+             
             </button>
-            
+                 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">projects</a></li>
@@ -49,7 +51,17 @@
                 </ul>
             </div>
                         
-                    
+                 
+            <div class="social-icons-nav custom-icons-big">
+                <a class="social-icon-nav" href="https://www.linkedin.com/in/julian-rijken-15082618b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon-nav" href="https://sketchfab.com/julianrijken" target="_blank"><span class="sketchfab-logo"></a>
+                    <a class="social-icon-nav nav-link js-scroll-trigger" href="#contact"><i class="fas fa-envelope"></i></a>
+                    <a class="social-icon-nav" href="https://github.com/JulianRijken" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="social-icon-nav" href="https://steamcommunity.com/id/Julianrijken" target="_blank"><i class="fab fa-steam"></i></a>
+                <a class="social-icon-nav" href="https://www.youtube.com/channel/UCBITNAEkmf_zHhbcnH8fQKA" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon-nav" onclick="CopyText()"><i class="fab fa-discord" style="cursor: pointer;"></i></a>
+            </div>
+
         </nav>
 
         <!-- Page Content-->
@@ -305,8 +317,47 @@
 
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">TrainTrouble</h2>
+                     
                                     <br>
                                     <br>
+
+                                    <h3 class="text-uppercase">About the game</h3>
+                                    <p>Train trouble is an action packed local multiplayer game. You have to get as many passengers to their destination while, at the same time, competing against other players.</p>
+
+
+                                    <h3 class="text-uppercase">What i did</h3>
+                                    <p>I was responsible for programming the entire game as a solo developer. I was confronted with buffering lists for the railroad cars and because it was the first time I worked with 2 others on a unity projects, I learned a lot about Git in the progress.</p>
+
+                       
+                                    <a class="social-icon-nav" href="https://github.com/JulianRijken/KilmerProject/blob/master/Kilmer_UnityProject/Assets/Content/Scripts/Train.cs" target="_blank">
+                                        <button class="btn btn-primary" type="button"><i class="fab fa-github mr-1"></i>View on Github</button>
+                                    </a>
+
+                                    
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4 mb-4">
+                                            <img class="img-fluid project-images" src="assets/img/portfolio/TrainTrouble/tt-sighn.png" alt=""/>
+                                        </div> 
+                                        <div class="col-lg-4 col-sm-4 mb-4">
+                                            <img class="img-fluid project-images" style="margin: 0ex;" src="assets/img/portfolio/TrainTrouble/tt-explotion.png" alt=""/>
+                                        </div> 
+                                        <div class="col-lg-4 col-sm-4 mb-4">
+                                            <img class="img-fluid project-images" style="margin: 0ex;" src="assets/img/portfolio/TrainTrouble/tt-settings.png" alt=""/>
+                                        </div> 
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 mb-4">
+                                            <iframe class="project-images" width="100%" height="100%" src="https://www.youtube.com/embed/xjEpr01QcGA" frameborder="0" allowfullscreen></iframe>
+                                        </div> 
+                                        <div class="col-lg-6 col-sm-6 mb-4">
+                                            <img class="img-fluid project-images" src="assets/img/portfolio/TrainTrouble/tt-tower.png" alt=""/>
+                                        </div> 
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <br>
+
                                     <div class="projectDescriptions">
                                         <b class="projectDescription-bold">Engine</b>
                                         <b class="projectDescription-bold">Language</b>
@@ -333,21 +384,10 @@
 
                                     <hr>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    
-                                    <h3 class="text-uppercase">What i did</h3>
 
-                                    <p>I was responsible for programming the entire game as a solo developer. I was confronted with buffering lists for the train wagons and because it was the first time I worked with 2 others on a unity projects, I learned a lot about Git in the progress.</p>
 
-                                    <br>
-                                    <h3 class="text-uppercase">About the game</h3>
-                                    <p>Train trouble is an action packed local multiplayer game. You have to get as many passengers to their destination while, at the same time, competing against other players.</p>
+                                    <button class="btn btn-primary"  href="https://sketchfab.com/julianrijken" target="_blank" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
 
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fab fa-github mr-1"></i>View on Github</button>
-                                    <br>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                    <br>
-                                    <br>
-                                                                           
                                 </div>
                             </div>                                                                                 
                         </div>

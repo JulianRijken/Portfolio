@@ -1,0 +1,48 @@
+ .custom-icons 
+ {
+    padding: 0.25rem 0.1rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0px solid transparent !important;
+    border-radius: 0rem;
+  }
+
+  @media (min-width: 992px) 
+  {
+    .custom-icons-big 
+    {
+        padding-bottom: 1.5em;
+    }
+  }
+
+  
+  @media (max-width: 991.98px) 
+  {
+    .custom-icons-big 
+    {
+        display: none;
+    }
+  }
+
+  .sketchfab-logo
+  {
+      width: 25px;
+      height: 25px;
+      background-image: url("../assets/img/icons/SketchFab-Logo.png");
+      background-size: contain;
+  }
+
+  .sketchfab-logo:hover
+  {
+      width: 25px;
+      height: 25px;
+      background-image: url("../assets/img/icons/SketchFab-Logo.png");
+      background-size: contain;
+      opacity: 0.6;
+  }
+
+  .project-images
+  {
+      margin: 0em !important;
+  }
