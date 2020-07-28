@@ -10247,7 +10247,7 @@ section.resume-section .resume-section-content {
   opacity: 0;
 }
 
-.projectDescriptions .projectDescription
+.projectDescriptions .projectDescription 
 {
   display: inline-flex;
   align-items: center;
@@ -10259,8 +10259,36 @@ section.resume-section .resume-section-content {
   color: rgb(0, 0, 0);
   padding-left: 0.1rem;
   padding-right: 0.1rem;
+  max-height: 0rem;
+  margin: auto;
   font-size: 1rem;
 }
+
+.projectDescriptions:hover
+{
+    color: black;
+}
+
+.projectDescriptionLink 
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  max-width: 400rem;
+  min-width: 5.7rem;
+  width: 20%;
+  color: dodgerblue;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  font-size: 1rem;
+}
+
+.projectDescriptionLink:hover       
+{
+    color: lightslategray;
+}
+
 
 .projectDescription-bold
 {
