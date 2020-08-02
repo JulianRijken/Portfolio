@@ -46,3 +46,10 @@
   {
       margin: 0em !important;
   }
+
+
+
+.box{
+    display: inherit;
+    width: 100%;
+}
