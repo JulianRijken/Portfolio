@@ -53,3 +53,7 @@
     display: inherit;
     width: 100%;
 }
+
+.profilePic {
+  border-radius: 50%;
+}
