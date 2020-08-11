@@ -23,16 +23,13 @@
  .sketchfab-logo {
      width: 25px;
      height: 25px;
-     background-image: url("../assets/img/icons/SketchFab-Logo.png");
+     background-image: url("../assets/img/icons/SketchFab-Logo.svg");
      background-size: contain;
  }
 
  .sketchfab-logo:hover {
-     width: 25px;
-     height: 25px;
-     background-image: url("../assets/img/icons/SketchFab-Logo.png");
-     background-size: contain;
-     opacity: 0.6;
+     opacity: 0.5;
+   
  }
 
  .project-images {
