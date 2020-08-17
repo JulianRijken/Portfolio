@@ -1823,12 +1823,12 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .table tbody+tbody {
@@ -11257,7 +11257,7 @@ section.resume-section .resume-section-content {
   height: 1rem;
   max-width: 400rem;
   min-width: 5.7rem;
-  width: 20%;
+  width: auto;
   color: dodgerblue;
   padding-left: 0.1rem;
   padding-right: 0.1rem;
