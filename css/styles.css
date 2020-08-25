@@ -1828,12 +1828,12 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .table tbody+tbody {
