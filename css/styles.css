@@ -6312,6 +6312,7 @@ a.close.disabled {
   background-image: url("../assets/img/Background/MainBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 .modal-backdrop {
