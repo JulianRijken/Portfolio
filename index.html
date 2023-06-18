@@ -122,6 +122,7 @@
             </div>
           </div>
 
+          <br>
           <h3 class="mb-0">Team Projects</h3>
           <br>
           <div class="row">
@@ -143,7 +144,7 @@
               </div>
 
             </div>
-<div class="col-lg-4 col-sm-6 mb-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="portfolio-item">
 
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
@@ -214,7 +215,7 @@
               </div>
             </div>
 </div>
-
+<br>
           <h3 class="mb-0">Personal Projects</h3>
           <br>
 
@@ -265,6 +266,7 @@
 
       </div>
     </section>
+    
     <hr class="m-0" />
 
 
@@ -1327,6 +1329,66 @@
 
   <input class="discord" type="text" value="julianrijken" id="myInput">
   <script>
+
+(function() {
+    var parallax = document.querySelectorAll("body"),
+      speed = 0.3;
+
+    // Create the overlay element
+    var overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.zIndex = "-1";
+
+    // Append the overlay to the body
+    document.body.appendChild(overlay);
+
+    // Function to handle scroll event
+    function handleScroll() {
+      [].slice.call(parallax).forEach(function(el, i) {
+        var windowYOffset = window.pageYOffset,
+          elBackgroundPos = "20% " + (windowYOffset * speed) + "px";
+
+        el.style.backgroundPosition = elBackgroundPos;
+
+        // Calculate background color based on scroll position
+        var color = calculateBackgroundColor(windowYOffset);
+        overlay.style.backgroundColor = color;
+      });
+    }
+
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Function to handle DOMContentLoaded event
+    function handleDOMContentLoaded() {
+      handleScroll(); // Call handleScroll initially on page load
+    }
+
+    // Attach DOMContentLoaded event listener
+    document.addEventListener("DOMContentLoaded", handleDOMContentLoaded);
+
+    function calculateBackgroundColor(scrollPos) {
+      // Calculate the alpha channel based on scroll position
+      var alpha = scrollPos / (document.documentElement.scrollHeight - window.innerHeight);
+
+      // Return the RGBA value with increasing alpha channel
+      return "rgba(255, 255, 255, " + mapValueInRange(alpha, 0, 1, 0.3, 0.1) + ")";
+    }
+
+    function mapValueInRange(value, inRangeMin, inRangeMax, outRangeMin, outRangeMax) {
+      return (
+        (value - inRangeMin) * (outRangeMax - outRangeMin) / (inRangeMax - inRangeMin) +
+        outRangeMin
+      );
+    }
+  })();
+
+
+
     function CopyText() {
       var copyText = document.getElementById("myInput");
       copyText.select();

@@ -74,15 +74,16 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #f30000;
+    color: #ffffff;
     text-align: left;
-    background-image: url(../assets/img/Background/MainBackground.jpg);
-    background-attachment: fixed;
+    background-image: url(../assets/img/Background/MainBackground3.jpg);
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size:cover;
 }	
+
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -401,16 +402,19 @@ h6,
 h1,
 .h1 {
   font-size: 6rem;
+  font-weight: 800;
 }
 
 h2,
 .h2 {
   font-size: 3.5rem;
+  font-weight: 700;
 }
 
 h3,
 .h3 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h4,
