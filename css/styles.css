@@ -74,7 +74,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #f30000;
     text-align: left;
     background-image: url(../assets/img/Background/MainBackground.jpg);
     background-attachment: fixed;
@@ -6308,8 +6308,12 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
+
+
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(152, 245, 215,0.9)),
+  url("../assets/img/Background/MainBackground.jpg");
   background-size: cover;
-  background-image: url("../assets/img/Background/MainBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: white;
