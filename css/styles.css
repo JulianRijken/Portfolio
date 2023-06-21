@@ -6315,8 +6315,8 @@ a.close.disabled {
 
 
   background-image:
-  linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(152, 245, 215,0.9)),
-  url("../assets/img/Background/MainBackground.jpg");
+  linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(245, 245, 215,0.8)),
+  url("../assets/img/Background/MainBackgroundBlur.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
