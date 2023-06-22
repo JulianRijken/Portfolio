@@ -68,7 +68,22 @@
         to {transform: rotate(360deg);}
       }
 
-      .button {
+/* Portrait */
+@media (orientation: portrait) {
+  body, html {
+    justify-content: flex-start;
+  }
+
+  canvas.emscripten {
+    top: 0;
+    bottom: auto;
+    transform: translateY(0);
+    max-height: 100vh;
+    width: 100vw; /* Added to stretch canvas to full width */
+  }
+}
+
+.button {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -135,17 +150,51 @@
 @media (orientation: portrait) {
   #container {
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     left: 8%;
   }
 
   #spaceButton {
     position: fixed;
     right: 8%;
-    bottom: 10px;
-    width: 200px;
-    height: 250px;
+    bottom: 40px;
+    width: 100px;
+    height: 215px;
   }
+
+  #upButton {
+  margin-bottom: 0px;
+  }
+
+  #downButton {
+    margin-top: 0px;
+  }
+
+  #leftButton {
+    margin-right: 25px;
+  }
+
+  #rightButton {
+    margin-left: 25px;
+  }
+
+  .button 
+  {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.205);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.295);
+  -webkit-tap-highlight-color: transparent; /* Added to remove tap highlight */
+  -webkit-touch-callout: none; /* Added to disable touch callout */
+  touch-action: manipulation; /* Added to disable default touch actions */
+}
 }
 
 
