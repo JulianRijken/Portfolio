@@ -68,8 +68,10 @@
         to {transform: rotate(360deg);}
       }
 
-/* Portrait */
-@media (orientation: portrait) {
+
+
+  /* Portrait */
+  @media (orientation: portrait) {
   body, html {
     justify-content: flex-start;
   }
@@ -80,6 +82,9 @@
     transform: translateY(0);
     max-height: 100vh;
     width: 100vw; /* Added to stretch canvas to full width */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
 }
 
@@ -98,17 +103,18 @@
   -webkit-tap-highlight-color: transparent; /* Added to remove tap highlight */
   -webkit-touch-callout: none; /* Added to disable touch callout */
   touch-action: manipulation; /* Added to disable default touch actions */
+  -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  background-color: #ffffff96;
-  outline: none;
-}
+
 
 #container {
   text-align: center;
+  -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #upButton {
