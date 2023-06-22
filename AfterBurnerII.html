@@ -80,10 +80,16 @@
   border-radius: 27px;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.295);
+  -webkit-tap-highlight-color: transparent; /* Added to remove tap highlight */
+  -webkit-touch-callout: none; /* Added to disable touch callout */
+  touch-action: manipulation; /* Added to disable default touch actions */
 }
 
-.button:hover {
+.button:hover,
+.button:active,
+.button:focus {
   background-color: #ffffff96;
+  outline: none;
 }
 
 #container {
