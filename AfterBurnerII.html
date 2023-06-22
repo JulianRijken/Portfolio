@@ -68,7 +68,7 @@
         to {transform: rotate(360deg);}
       }
 
-.button {
+      .button {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -93,10 +93,6 @@
 }
 
 #container {
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
 }
 
@@ -116,13 +112,40 @@
   margin-left: 35px;
 }
 
-#spaceButton {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 250px;
-  height: 250px;
+/* Landscape */
+@media (orientation: landscape) {
+  #container {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #spaceButton {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Portrait */
+@media (orientation: portrait) {
+  #container {
+    position: fixed;
+    bottom: 10px;
+    left: 8%;
+  }
+
+  #spaceButton {
+    position: fixed;
+    right: 8%;
+    bottom: 10px;
+    width: 200px;
+    height: 250px;
+  }
 }
 
 
@@ -237,54 +260,53 @@
 
  
 
-let keyHeld = false;
+      let keyState = {};
 
-const dispatchEvent = (keyCode, eventType) => {
-  const event = new KeyboardEvent(eventType, {
-    key: String.fromCharCode(keyCode),
-    code: `Key${String.fromCharCode(keyCode)}`,
-    which: keyCode,
-    keyCode: keyCode,
-    bubbles: true
-  });
+      const dispatchEvent = (keyCode, eventType) => {
+        const event = new KeyboardEvent(eventType, {
+          key: String.fromCharCode(keyCode),
+          code: `Key${String.fromCharCode(keyCode)}`,
+          which: keyCode,
+          keyCode: keyCode,
+          bubbles: true
+        });
 
-  window.dispatchEvent(event);
-};
+        window.dispatchEvent(event);
+      };
 
-const startKeyPress = (keyCode) => {
-  if (!keyHeld) {
-    keyHeld = true;
-    dispatchEvent(keyCode, 'keydown');
-  }
-};
+      const startKeyPress = (keyCode) => {
+        if (!keyState[keyCode]) {
+          keyState[keyCode] = true;
+          dispatchEvent(keyCode, 'keydown');
+        }
+      };
 
-const stopKeyPress = (keyCode) => {
-  if (keyHeld) {
-    keyHeld = false;
-    dispatchEvent(keyCode, 'keyup');
-  }
-};
+      const stopKeyPress = (keyCode) => {
+        if (keyState[keyCode]) {
+          keyState[keyCode] = false;
+          dispatchEvent(keyCode, 'keyup');
+        }
+      };
 
-const spaceButton = document.getElementById('spaceButton');
-spaceButton.addEventListener('touchstart', () => startKeyPress(32));
-spaceButton.addEventListener('touchend', () => stopKeyPress(32));
+      const spaceButton = document.getElementById('spaceButton');
+      spaceButton.addEventListener('touchstart', () => startKeyPress(32));
+      spaceButton.addEventListener('touchend', () => stopKeyPress(32));
 
-const upButton = document.getElementById('upButton');
-upButton.addEventListener('touchstart', () => startKeyPress(87));
-upButton.addEventListener('touchend', () => stopKeyPress(87));
+      const upButton = document.getElementById('upButton');
+      upButton.addEventListener('touchstart', () => startKeyPress(87));
+      upButton.addEventListener('touchend', () => stopKeyPress(87));
 
-const leftButton = document.getElementById('leftButton');
-leftButton.addEventListener('touchstart', () => startKeyPress(65));
-leftButton.addEventListener('touchend', () => stopKeyPress(65));
+      const leftButton = document.getElementById('leftButton');
+      leftButton.addEventListener('touchstart', () => startKeyPress(65));
+      leftButton.addEventListener('touchend', () => stopKeyPress(65));
 
-const rightButton = document.getElementById('rightButton');
-rightButton.addEventListener('touchstart', () => startKeyPress(68));
-rightButton.addEventListener('touchend', () => stopKeyPress(68));
+      const rightButton = document.getElementById('rightButton');
+      rightButton.addEventListener('touchstart', () => startKeyPress(68));
+      rightButton.addEventListener('touchend', () => stopKeyPress(68));
 
-const downButton = document.getElementById('downButton');
-downButton.addEventListener('touchstart', () => startKeyPress(83));
-downButton.addEventListener('touchend', () => stopKeyPress(83));
-
+      const downButton = document.getElementById('downButton');
+      downButton.addEventListener('touchstart', () => startKeyPress(83));
+      downButton.addEventListener('touchend', () => stopKeyPress(83));
 
 
     </script>
