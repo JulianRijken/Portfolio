@@ -354,6 +354,21 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item"> <a class="portfolio-link" data-toggle="modal"
+                href="#portfolioModalGameDesighn1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content"><i class="fa fa-gamepad fa-4x"></i></div>
+                </div>
+                <img class="img-fluid" src="assets/img/portfolio/GameDesign/Thumb.jpg" alt="" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Rapid Prototyping</div>
+                <div class="portfolio-caption-subheading text-muted">Unreal Blueprints</div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 
@@ -1800,6 +1815,52 @@
       </div>
     </div>
   </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModalGameDesighn1" aria-hidden="true" role="dialog"
+  tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times fa-3x"></i></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="modal-body">
+              <!-- Project Details Go Here-->
+              <h2 class="text-uppercase">2D Graphics</h2>
+              <br>
+              <p>I'll have the dev log speak for itself ;)</p>
+              
+              <div class="row">
+                <div class="col-lg-12 col-sm-12 mb-12">
+
+                  <div class="col-lg-12 col-sm-12 mb-12">
+                    <iframe class="project-images" width="100%" height="490"
+                      src="https://www.youtube.com/embed/c0WdhOJk2QI" frameborder="0"
+                      allowfullscreen></iframe>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <br>
+
+
+
+
+              
+<button class="btn btn-primary" data-dismiss="modal" target="_blank" type="button"><i
+                  class="fas fa-times mr-1"></i>Close Project</button>
+              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
   
 
   <!-- Bootstrap core JS-->
@@ -1884,104 +1945,14 @@
 
 
     $(document).ready(function () {
-      $('#portfolioModal1').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
+  $('.modal').on('hidden.bs.modal', function () {
+    var $iframe = $(this).find('iframe'),
+        tempSrc = $iframe.attr('src');
+    $iframe.attr('src', '');
+    $iframe.attr('src', tempSrc);
+  });
+});
 
-    $(document).ready(function () {
-      $('#portfolioModal2').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModal2').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModal3').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModal4').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModal5').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModal6').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModalMalaga1').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModalMalaga2').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModalSourceLevelDesign').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-
-    $(document).ready(function () {
-      $('#portfolioModalRapidPrototyping').on('hidden.bs.modal', function () {
-        var $this = $(this).find('iframe'),
-          tempSrc = $this.attr('src');
-        $this.attr('src', "");
-        $this.attr('src', tempSrc);
-      });
-    });
-    
   </script>
 
 </body>
