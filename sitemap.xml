@@ -9,12 +9,17 @@
 
 <url>
   <loc>https://julianrijken.com/</loc>
-  <lastmod>2020-08-28T23:27:21+00:00</lastmod>
+  <lastmod>2023-08-28T18:29:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://julianrijken.com/assets/CV/CV_JulianRijken_2020_V1.0.pdf</loc>
-  <lastmod>2020-08-28T23:27:20+00:00</lastmod>
+  <loc>https://julianrijken.com/assets/CV/CV_JulianRijken_Current.pdf</loc>
+  <lastmod>2023-08-28T18:29:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://julianrijken.com/AfterBurnerII</loc>
+  <lastmod>2023-08-28T18:29:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
