@@ -402,13 +402,13 @@ h6,
 h1,
 .h1 {
   font-size: 6rem;
-  font-weight: 800;
+  font-weight: 1200;
 }
 
 h2,
 .h2 {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h3,
@@ -1827,6 +1827,11 @@ pre code {
   margin-bottom: 1rem;
   color: #212529;
 }
+
+.table-white {
+  color: #e6e6e6;
+}
+
 
 .table th,
 .table td {
@@ -6365,6 +6370,11 @@ a.close.disabled {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+}
+
+.white-modal-body > * 
+{
+  color: #ebebeb !important; 
 }
 
 .modal-footer {
@@ -11297,6 +11307,7 @@ section.resume-section .resume-section-content {
   max-width: 400rem;
   min-width: 5.7rem;
   width: 20%;
+  forced-color-adjust: auto;
   color: rgb(63, 63, 63);
   padding-left: 0.1rem;
   padding-right: 0.1rem;
