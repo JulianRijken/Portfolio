@@ -11155,7 +11155,7 @@ section.resume-section .resume-section-content {
 
 
 #portfolio .portfolio-item {
-  max-width: 25rem;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
   box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.39);
