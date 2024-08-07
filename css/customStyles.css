@@ -33,6 +33,18 @@
    
  }
 
+ .matrix-logo {
+    width: 25px;
+    height: 25px;
+    background-image: url("../assets/img/icons/Matrix_icon_\(white\).svg");
+    background-size: contain;
+}
+
+.matrix-logo:hover {
+    opacity: 0.5;
+  
+}
+
  .project-images {
      margin: 0em !important;
  }
@@ -47,3 +59,14 @@
  .profilePic {
      border-radius: 2rem;
  }
+
+ .custom-code
+ {
+    text-align: left;
+    overflow: hidden;
+    text-size-adjust: 0.5;
+ }
+
+ .hljs {
+    font-size: 16px; /* Change this to your desired font size */
+}
