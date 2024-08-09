@@ -20,6 +20,8 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css">
+    <!-- Hack Font-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/customStyles.css" rel="stylesheet">
@@ -2678,14 +2680,14 @@
                                 </p>
                                 <!-- <h4 class="text-uppercase">techniques&nbsp; Used</h4>
                 <p>SDL - OpenGL</p> -->
-                                <a class="social-icon-nav" href="https://github.com/JulianRijken/AfterBurnerII"
+                                <!-- <a class="social-icon-nav" href="https://github.com/JulianRijken/AfterBurnerII"
                                     target="_blank">
                                     <button class="btn btn-primary" type="button">
                                         <i class="fab fa-git-alt mr-1"></i>
                                         View on
                                         Github
                                     </button>
-                                </a>
+                                </a> -->
                                 <a class="social-icon-nav"
                                     href="https://JulianRijken.com/AfterBurnerIIWeb/AfterBurnerII" target="_blank">
                                     <button class="btn btn-primary" type="button">
@@ -2740,11 +2742,6 @@
                                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;Custom SDL</td>
                                                 <td>C++</td>
                                                 <td>Julian Rijken</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2851,11 +2848,6 @@
                                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;Unity</td>
                                                 <td>C#</td>
                                                 <td>Julian Rijken</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -3114,11 +3106,6 @@
                                                 <td>C#</td>
                                                 <td>Julian Rijken</td>
                                             </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -3219,11 +3206,6 @@
                                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;Engine</td>
                                                 <td>Language</td>
                                                 <td>Julian Rijken</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -3469,11 +3451,6 @@
                                                 <td>C++</td>
                                                 <td>Julian Rijken</td>
                                             </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -3491,7 +3468,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModalJulgen" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content"
-                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.342), rgba(22, 21, 23, 0.559)), url(assets/img/Background/BB_Background.avif)">
+                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.71), rgba(22, 21, 23, 0.893)), url(assets/img/Background/BB_Background.avif)">
                 <div class="close-modal" data-dismiss="modal">
                     <i class="fa fa-times fa-3x"></i>
                 </div>
@@ -3531,17 +3508,24 @@
                                 <br>
                                 <h3 class="text-uppercase">Getting Started</h3>
                                 <p>
-                                    Keeping the vision of making a simple to use game engine with the full power of C++ I have setup the engine so that you can start with just a single cpp file. Similar to your standard main.cpp, Julgen requires the user to define PreInit() and GameStart().
+                                    Keeping the vision of making a simple to use game engine with the full power of C++
+                                    I have setup the engine so that you can start with just a single cpp file. Similar
+                                    to your standard main.cpp, Julgen requires the user to define PreInit() and
+                                    GameStart().
 
                                     Similar to a Awake() and Start():
                                     PreInit() can be used to setup the window title and resolution.
-                                    GameStart() will be the start of the game, here you can load resources or scenes.               
+                                    GameStart() will be the start of the game, here you can load resources or scenes.
                                 </p>
                                 <h3 class="text-uppercase">Loading Scenes</h3>
                                 <p>
-                                    As you might have noticed in the code, the scenes are also loaded from the code. I will be working on a GUI version of the engine in the future, but for now this system works quite well :)
+                                    As you might have noticed in the code, the scenes are also loaded from the code. I
+                                    will be working on a GUI version of the engine in the future, but for now this
+                                    system works quite well :)
 
-                                    All the user does is create a void method with a scene& parameter, this allows easy access to the scene being loaded. Scenes are binded at first, allowing for them to be reused.                                            
+                                    All the user does is create a void method with a scene& parameter, this allows easy
+                                    access to the scene being loaded. Scenes are binded at first, allowing for them to
+                                    be reused.
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
@@ -3648,7 +3632,448 @@ void jul::Julgen::GameStart()
 </code></pre>
                                     </div>
                                 </div>
+                                <h3 class="text-uppercase">Example Game</h3>
+                                <p>
+                                    What better than making a game to demonstrate the engine!
+                                    Using the <a href="https://kenney.nl/assets/tappy-plane"
+                                        style="color: goldenrod;">Tappy Plane asset pack</a> from Kenney I will be
+                                    making small little game going over all the steps.
 
+                                    We start by just loading the plane sprite with a idle animation
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">void MainScene(jul::Scene&amp; scene)
+{
+    // Add camrea to the scene
+    auto* camera = scene.AddGameObject(&quot;Camera&quot;);
+    camera&#8209;&gt;AddComponent&lt;jul::Camera&gt;(5, 16.0 / 9.0);
+
+    // Add image to the screen
+    auto* plane = scene.AddGameObject(&quot;Logo&quot;);
+    plane&#8209;&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;Logo&quot;));
+    plane&#8209;&gt;AddComponent&lt;jul::Animator&gt;()&#8209;&gt;Play(&quot;Idle&quot;, true);
+}
+
+void jul::Julgen::GameStart()
+{
+    // Load image
+    Resources::LoadSprite(
+        &quot;Logo&quot;,
+        &quot;TappyPlane/planeYellow1.png&quot;,
+        88, // The sprite is 88 pixels wide, this will make the place 1 unit 
+        { 0.5f, 0.5f }, // We want the plane to pivot around it&#039;s center
+        1,  // 1 row
+        3,  // 3 cols
+
+        // The animation is called Idle, with 3 frames and 8 frames per second
+        // Sprite animations also allow reusing frames as seen here
+        { 
+            { &quot;Idle&quot;, SpriteAnimation{ { { 0, 0 }, { 1, 0 }, { 2, 0 }, { 1, 0 } }, 8 } } 
+        }
+    );
+
+    // Bind scene (can be used to load multiple times)
+    SceneManager::BindScene(0, MainScene);
+
+    // Load scene
+    SceneManager::LoadScene(0);
+}
+                                            </code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <video class="img-fluid project-images"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneIdle.webm" autoplay="true"
+                                            loop="true" alt="">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <h3 class="text-uppercase">Basic component in Julgen</h3>
+                                <p>
+                                    The following is the default structure for a component
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">#ifndef PLANE_H
+#define PLANE_H
+
+#include &lt;Component.h&gt;
+
+namespace tp
+{
+    class Plane final : public jul::Component
+    {
+    public:
+        Plane(jul::GameObject* parentPtr);
+
+    private:
+        // All Optional
+        void Update() override;
+        void LateUpdate() override;
+        void FixedUpdate() override;
+        void OnDestroy() override;
+    };
+
+}  // namespace tp
+#endif  // PLANE_H
+
+
+// CPP File
+
+#include &quot;Plane.h&quot;
+
+tp::Plane::Plane(jul::GameObject* parentPtr) :
+    jul::Component(parentPtr, &quot;Plane&quot;)  // Optinally give the component a name
+    {}
+                                            </code></pre>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <h3 class="text-uppercase">Creating the plane component</h3>
+                                <p>
+                                    To create the plane we can add some simple code to our component that makes the
+                                    plane fall down. We will also change the angle to add some player feedback to the
+                                    plane.DS
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">#ifndef PLANE_H
+#define PLANE_H
+
+#include &lt;Component.h&gt;
+#include &lt;InputContext.h&gt;
+
+namespace tp
+{
+    // We require an event listener for input
+    class Plane final : public jul::Component, public jul::IEventListener
+    {
+    public:
+        Plane(jul::GameObject* parentPtr);
+
+        void OnBumpInput(const jul::InputContext&amp; context);
+
+        static constexpr double GRAVITY_FORCE = &#8209;0.09;
+        static constexpr double BUMP_VELOCITY = 0.09;
+        static constexpr double MAX_VELOCITY = 0.05;
+        static constexpr double FALL_ANGLE = 20.0;
+
+    private:
+        void Update() override;
+
+        double m_VerticalVelocity{};
+    };
+
+}  // namespace tp
+#endif  // PLANE_H</code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">#include &quot;Plane.h&quot;
+
+#include &lt;GameTime.h&gt;
+#include &lt;MathExtensions.h&gt;
+#include &lt;Transform.h&gt;
+
+#define GLM_ENABLE_EXPERIMENTAL
+#include &lt;glm/gtx/string_cast.hpp&gt;
+
+tp::Plane::Plane(jul::GameObject* parentPtr) :
+    jul::Component(parentPtr, &quot;Plane&quot;)
+{}
+
+void tp::Plane::OnBumpInput(const jul::InputContext&amp; context)
+{
+    // We only wanna trigger on button down
+    if(context.state != jul::ButtonState::Down)
+        return;
+
+    // When bumping, change the velocity
+    m_VerticalVelocity += BUMP_VELOCITY;
+}
+
+void tp::Plane::Update()
+{
+    // Add and clamp velocity
+    m_VerticalVelocity += GRAVITY_FORCE * jul::GameTime::GetDeltaTime();
+    m_VerticalVelocity = std::clamp(m_VerticalVelocity, &#8209;MAX_VELOCITY, MAX_VELOCITY);
+
+    // Apply Gravity
+    // done without physics to simplify
+    GetTransform().Translate(0, m_VerticalVelocity, 0);
+
+    // Rotate plane based on velocity
+    const double targetAngle =
+        &#8209;jul::math::MapValueInRangeClamped(m_VerticalVelocity, &#8209;MAX_VELOCITY, MAX_VELOCITY, &#8209;FALL_ANGLE, FALL_ANGLE);
+    GetTransform().SetLocalRotation(0, 0, targetAngle);
+}</code></pre>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <p>
+                                    We also add the component to the plane game object and bind the input to the
+                                    function. There are many ways to takle the input, but for simplicity we will
+                                    directly bind the function.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">// Add Plane
+auto* planeGOPtr = scene.AddGameObject(&quot;Logo&quot;);
+planeGOPtr&#8209;&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;Logo&quot;));
+planeGOPtr&#8209;&gt;AddComponent&lt;jul::Animator&gt;()&#8209;&gt;Play(&quot;Idle&quot;, true);
+planeGOPtr&#8209;&gt;AddComponent&lt;jul::BoxCollider&gt;();
+auto* planeComponentPtr = planeGOPtr&#8209;&gt;AddComponent&lt;tp::Plane&gt;();
+
+jul::Input::Bind(InputBind::Bump, 0, true, planeComponentPtr, &amp;tp::Plane::OnBumpInput);</code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <video class="img-fluid project-images"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJump.webm" autoplay="true"
+                                            loop="true" alt="">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <h3 class="text-uppercase">Time to add some obstacles to the game!</h3>
+                                <p>
+                                    In this step we will just add obstacles visually. This is done in the form of two
+                                    new component; a GameState, this because we need some form of keeping track of the
+                                    obstacles and a AutoMove component. We want to make the components as generic as
+                                    possible to allow for flexible development.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">#ifndef GAMESTATE_H
+#define GAMESTATE_H
+
+#include &lt;Component.h&gt;
+#include &lt;MathExtensions.h&gt;
+
+namespace tp
+{
+    class GameState final : public jul::Component
+    {
+    public:
+        GameState(jul::GameObject* parentPtr);
+
+        static constexpr double SPAWN_INTERVAL_MIN = 0.5;
+        static constexpr double SPAWN_INTERVAL_MAX = 1.5;
+
+        static constexpr double OBSTACLE_HEGIHT_MIN = -0.9;
+        static constexpr double OBSTACLE_HEGIHT_MAX = 0.9;
+
+        static constexpr double FLY_SPEED = 4.0;
+
+    private:
+        void Update() override;
+        void SpawnObstacle();
+
+        double m_SpawnInterval{ 0 };
+        double m_SpawnTimer{ 0 };
+    };
+}  // namespace tp
+#endif  // GAMESTATE_H</code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">#include &quot;GameState.h&quot;
+#include &lt;AutoMove.h&gt;
+#include &lt;GameTime.h&gt;
+#include &lt;Resources.h&gt;
+#include &lt;SceneManager.h&gt;
+#include &lt;SpriteRenderer.h&gt;
+
+tp::GameState::GameState(jul::GameObject* parentPtr) :
+    jul::Component(parentPtr, &quot;GameState&quot;) {}
+
+void tp::GameState::Update()
+{
+    m_SpawnTimer += jul::GameTime::GetDeltaTime();
+
+    if(m_SpawnTimer &gt; m_SpawnInterval)
+    {
+        m_SpawnTimer -= m_SpawnInterval;
+
+        m_SpawnInterval = jul::math::RandomRange(SPAWN_INTERVAL_MIN, SPAWN_INTERVAL_MAX);
+        SpawnObstacle();
+    }
+}
+
+void tp::GameState::SpawnObstacle()
+{
+    // Get active scene
+    // In Julgen this is done manually for more control and clarity
+    // Engines like Unity just use the primary scene by default
+    auto&amp; currentScene = jul::SceneManager::GetPrimaryScene();
+
+    const double spawnHeight = jul::math::RandomRange(OBSTACLE_HEGIHT_MIN, OBSTACLE_HEGIHT_MAX);
+
+    // We will make a hierarchy, so we need a parent obstacle
+    auto* obstacleGOPtr = currentScene.AddGameObject(&quot;Obstacle&quot;, { 8, spawnHeight, 0 });
+    obstacleGOPtr-&gt;AddComponent&lt;tp::AutoMove&gt;(glm::vec3{ -FLY_SPEED, 0, 0 });
+
+    // We will make a hierarchy, so we need a parent obstacle
+    auto* topSpikeGOPtr = currentScene.AddGameObject(&quot;TopSpike&quot;, { 0, 3, 0 });
+    topSpikeGOPtr-&gt;GetTransform().SetParent(&amp;obstacleGOPtr-&gt;GetTransform(), false);
+    topSpikeGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;SpikeTop&quot;));
+
+    auto* bottomSpikeGOPtr = currentScene.AddGameObject(&quot;TopSpike&quot;, { 0, -3, 0 });
+    bottomSpikeGOPtr-&gt;GetTransform().SetParent(&amp;obstacleGOPtr-&gt;GetTransform(), false);
+    bottomSpikeGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;SpikeBottom&quot;));
+
+    // we will add some slight variation to the terrain
+    topSpikeGOPtr-&gt;GetTransform().SetLocalRotation(0, 0, jul::math::RandomRange(-3, 3));
+    bottomSpikeGOPtr-&gt;GetTransform().SetLocalRotation(0, 0, jul::math::RandomRange(-3, 3));
+
+    // Objects should ideally be reused or be destroyed when off screen
+    // Because of this being an simple example game I chose to just destroy the objects delayd
+    // This ofcourse has issues when changing the fly speed
+    obstacleGOPtr-&gt;DestroyDelayed(10);
+}</code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <video class="img-fluid project-images"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpObstacles.webm"
+                                            autoplay="true" loop="true" alt="">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <h3 class="text-uppercase">COllision and EndScreen</h3>
+                                <p>
+                                    All we have left to finish this little example game is collision with the spikes and
+                                    going out of the screen. Julgen has Box2D integrated, so it’s a piece of cake to add
+                                    box colliders. All we need to do is add colliders and rigididbodys to the pillars
+                                    and plane. This allows for the ICollisionListener to work.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">// Add Plane
+auto* planeGOPtr = scene.AddGameObject(&quot;Plane&quot;);
+auto* planeComponentPtr = planeGOPtr-&gt;AddComponent&lt;tp::Plane&gt;();
+planeGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;Plane&quot;));
+planeGOPtr-&gt;AddComponent&lt;jul::Animator&gt;()-&gt;Play(&quot;Idle&quot;, true);
+// New for the collision
+planeGOPtr-&gt;AddComponent&lt;jul::Rigidbody&gt;(
+    jul::Rigidbody::Settings{ .mode = jul::Rigidbody::Mode::Dynamic, .manuallyMove = true });
+planeGOPtr-&gt;AddComponent&lt;jul::BoxCollider&gt;(jul::BoxCollider::Settings{
+    .size{   1,     1},
+    .center{0.5f, -0.5f}
+});
+
+
+// And the same goes for the spikes
+auto* bottomSpikeGOPtr = currentScene.AddGameObject(&quot;BottomSpike&quot;, { 0, -3, 0 });
+bottomSpikeGOPtr-&gt;GetTransform().SetParent(&amp;obstacleGOPtr-&gt;GetTransform(), false);
+bottomSpikeGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;SpikeBottom&quot;));
+
+bottomSpikeGOPtr-&gt;AddComponent&lt;jul::Rigidbody&gt;(jul::Rigidbody::Settings{ .mode = jul::Rigidbody::Mode::Static });
+bottomSpikeGOPtr-&gt;AddComponent&lt;jul::BoxCollider&gt;(jul::BoxCollider::Settings{
+    .size{ 0.1,   1.2},
+    .center{0.5f, -0.5f}
+});</code></pre>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    Then simply in the plane component, derive from ICollisionListener and override
+                                    OnCollisionBegin. You might have noticed that we use the MessageQueue. This is to
+                                    decouple the game over code from the player plane.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">void tp::Plane::OnCollisionBegin(const jul::Collision&amp; /*unused*/) { KillPlayer(); }
+void tp::Plane::KillPlayer()
+{
+    m_IsDead = true;
+    jul::MessageQueue::Broadcast(tp::MessageType::PlayerDead);
+}</code></pre>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3 class="text-uppercase">End Screen</h3>
+                                <p>
+                                    To round it off, we listened to the on-player-death message and display the game
+                                    over screen. We can use Julgen’s tween engine to polish the game with a bounce
+                                    effect.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">tp::GameState::GameState(jul::GameObject* parentPtr) :
+jul::Component(parentPtr, &quot;GameState&quot;)
+{
+    jul::MessageQueue::AddListener(MessageType::PlayerDead, this, &amp;GameState::OnPlayerDead);
+}
+
+void tp::GameState::OnPlayerDead(const jul::Message&amp; /*unused*/)
+{
+    jul::GameTime::SetTimeScale(0);
+
+    // Add Background
+    auto* gameOverTextGOPtr = jul::SceneManager::GetPrimaryScene().AddGameObject(&quot;GameOverText&quot;);
+    gameOverTextGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;GameOverText&quot;), 100);
+
+    jul::TweenEngine::Start(
+        { 
+            .duration = 2.0,
+            .igunoreTimeScale = true,
+            .easeFunction = jul::EaseFunction::BounceOut,
+            .onUpdate = [gameOverTextGOPtr](double value) 
+            {
+                gameOverTextGOPtr-&gt;GetTransform().SetLocalScale(glm::vec3{ value, value, value });
+            } 
+        },gameOverTextGOPtr); // Here we pass the gameobject. This allows the tween to stop when it gets destroyed
+}</code></pre>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    You can also add a restart command and bind it using the input system.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <pre><code class="language-cpp, custom-code">class ResetGameCommand final : public jul::BaseCommand
+{
+public:
+    void Execute(const jul::InputContext&amp; context) override
+    {
+        if(context.state != jul::ButtonState::Down)
+            return;
+
+        jul::SceneManager::LoadScene(0);
+        jul::GameTime::SetTimeScale(1);
+    }
+};
+
+
+// In GameStart()
+Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, true);</code></pre>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <video class="img-fluid project-images"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpGameOver.webm"
+                                            autoplay="true" loop="true" alt="">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <p>             
+I hope you enjoyed this little game demo in Julgen. The engine has much to offer with it’s Tweening system and also has a very nice delegate/event system. For more info feel free to check the <a href="https://github.com/JulianRijken/Julgen"
+style="color: goldenrod;">GitHub</a>  page or give the engine a try yourself ;)
+                                </p>
                                 <br>
                                 <br>
                                 <div class="table-responsive" style="color: inherit;">
@@ -3674,11 +4099,6 @@ void jul::Julgen::GameStart()
                                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;Julgen</td>
                                                 <td>C++</td>
                                                 <td>Julian Rijken</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -3946,11 +4366,6 @@ void jul::Julgen::GameStart()
                                                 <td>Blueprints</td>
                                                 <td>Julian Rijken</td>
                                             </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -4169,11 +4584,6 @@ void jul::Julgen::GameStart()
                                                 <td>C#</td>
                                                 <td>Julian Rijken</td>
                                             </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -4254,7 +4664,7 @@ void jul::Julgen::GameStart()
             function handleScroll() {
                 [].slice.call(parallax).forEach(function (el, i) {
                     var windowYOffset = window.pageYOffset,
-                        elBackgroundPos = “20 % " + (windowYOffset * speed) + “px”;
+                        elBackgroundPos = “20 % ” + (windowYOffset * speed) + “px”;
 
                     el.style.backgroundPosition = elBackgroundPos;
 
@@ -4307,7 +4717,7 @@ void jul::Julgen::GameStart()
             $(’.modal’).on(‘hidden.bs.modal’, function () {
                 var $iframe = $(this).find(‘iframe’),
                     tempSrc = $iframe.attr(‘src’);
-                $iframe.attr(‘src’, '');
+                $iframe.attr(‘src’, ’');
                 $iframe.attr(‘src’, tempSrc);
             });
         });

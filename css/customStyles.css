@@ -67,6 +67,9 @@
     text-size-adjust: 0.5;
  }
 
+ pre, code { font-family: Hack, monospace; }
+ 
  .hljs {
+    
     font-size: 16px; /* Change this to your desired font size */
 }
