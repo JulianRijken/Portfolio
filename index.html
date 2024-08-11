@@ -3375,7 +3375,7 @@
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <div class="sketchfab-embed-wrapper">
                                             <video muted class="img-fluid project-images"
-                                                src="assets/img/portfolio/ShootNScoot/2.webm" controls loop
+                                                src="assets/img/portfolio/ShootNScoot/2.webm" loop
                                                 alt="julian rijken image portfolio">
                                         </div>
                                     </div>
@@ -3398,7 +3398,7 @@
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <div class="sketchfab-embed-wrapper">
                                             <video muted class="img-fluid project-images"
-                                                src="assets/img/portfolio/ShootNScoot/3.webm" controls loop
+                                                src="assets/img/portfolio/ShootNScoot/3.webm" loop
                                                 alt="julian rijken image portfolio">
                                         </div>
                                     </div>
@@ -3778,7 +3778,7 @@ void jul::Julgen::GameStart()
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneIdle.webm" loop="true"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneIdle.webm" loop
                                             alt="julian rijken image portfolio">
                                     </div>
                                 </div>
@@ -3929,7 +3929,7 @@ jul::Input::Bind(InputBind::Bump, 0, true, planeComponentPtr, &amp;tp::Plane::On
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJump.webm" loop="true"
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJump.webm" loop
                                             alt="julian rijken image portfolio">
                                     </div>
                                 </div>
@@ -4037,7 +4037,7 @@ void tp::GameState::SpawnObstacle()
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpObstacles.webm" controls
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpObstacles.webm"
                                             loop alt="julian rijken image portfolio">
                                     </div>
                                 </div>
@@ -4157,7 +4157,7 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpGameOver.webm" controls
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpGameOver.webm"
                                             loop alt="julian rijken image portfolio">
                                     </div>
                                 </div>
@@ -4834,17 +4834,6 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
         $.each(vids, function () {
             this.volume = 0.2;
         });
-        //Loop though all Video tags and set Controls as false
-
-        $("video").click(function () {
-            //console.log(this); 
-            if (this.paused) {
-                this.play();
-            } else {
-                this.pause();
-            }
-        });
-
     </script>
 </body>
 
