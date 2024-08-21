@@ -30,7 +30,8 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand d-lg-none js-scroll-trigger" href="https://julianrijken.com/AfterBurnerIIWeb/AfterBurnerII">
+        <a class="navbar-brand d-lg-none js-scroll-trigger"
+            href="https://julianrijken.com/AfterBurnerIIWeb/AfterBurnerII">
             <span class="d-block d-lg-none">
                 <img style="width: 3.8rem; height: auto; align-items: center" src="assets/img/icons/SiteIcon.svg"
                     alt="julian rijken image portfolio">
@@ -48,9 +49,11 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">about</a>
                 </li>
-                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">experience</a></li>-->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#archive">Archive</a>
                 </li>
             </ul>
             <div class="social-icons-nav navbar-toggler custom-icons">
@@ -119,9 +122,8 @@
                         Hello! You landed on Julian's portfolio!
                         <br>
                         I'm a
-                        <b>Gameplay Programmer / Generalist</b>
-                        , I love taking deep dives into character controllers and complex gameplay systems. I enjoy all
-                        aspects of game development, from making the art to the low level systems.
+                        <b>Gameplay Programmer</b>, who also love to take deep dives in lower level programming, using
+                        languages like C++ to build intricate systems, custom engines, and games from scratch.
                         <br>
                         More about me can be found below
                     </p>
@@ -134,7 +136,7 @@
             <div class="resume-section-content">
                 <!-- <h2 class="mb-5">Projects</h2> -->
                 <section id="portfolio">
-                    <h3 class="mb-0">Solo Projects</h3>
+                    <h3 class="mb-0">Projects</h3>
                     <br>
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 mb-4">
@@ -174,7 +176,25 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-6 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalShootNScoot">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/ShootNScoot/Itch_Thumb.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Shoot'n Scoot</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, May 2024</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalAfterBurner">
                                     <div class="portfolio-hover">
@@ -191,44 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalParryTank">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/ParryTank/Thumb.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Parry Tank</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 13 Nov 2023</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalPirateBay">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/PirateBay/Tumbnail.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">PirateBay</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 19 May 2022</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <br>
-                    <h3 class="mb-0">Game Jams</h3>
-                    <br>
                     <div class="row">
                         <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
@@ -250,6 +233,59 @@
                         </div>
                         <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalParryTank">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/ParryTank/Thumb.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Parry Tank</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 13 Nov 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalPirateBay">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/PirateBay/Tumbnail.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">PirateBay</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 19 May 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalWheelSpin">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/WheelSpin/WheelSpin_Thumb.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Wheel Spin</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unreal 5, 19 June 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalBreadEnd">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content">
@@ -265,82 +301,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalMalaga2">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="assets/img/portfolio/Malaga/Malaga Game Jam 2020/Thumpnail2.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Malaga Game Jam</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 31 Jan 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="assets/img/portfolio/One Button Drift Game/Thumpnail.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">One Button</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 1 Jul 2019</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalStrawberry">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Strawberry/Strawberry.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Strawberry Game Jam</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unreal 5, 19 May 2022</div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                    <br>
-                    <h3 class="mb-0">Team Projects</h3>
-                    <br>
                     <div class="row">
-                        <div class="col-lg-6 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalShootNScoot">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/ShootNScoot/Itch_Thumb.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Shoot'n Scoot</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, May 2024</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                     <div class="portfolio-hover">
@@ -378,23 +342,6 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 mb-4">
                             <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalWheelSpin">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/WheelSpin/WheelSpin_Thumb.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Wheel Spin</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unreal 5, 19 June 2023</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content">
@@ -411,63 +358,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Water Museum/water-game_game.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Water Museum</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 17 Nov 2019</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Twinstick/gun.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Twin Stick Shooter</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 6 May 2019</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Morph/Screenshot_37.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Morph</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 11 Feb 2020</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <br>
                     <h3 class="mb-0">Graphics Programming</h3>
                     <br>
                     <div class="row">
-                        <div class="col-lg-5 col-sm-5 mb-4">
+                        <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalSoftwareRasterizer">
                                     <div class="portfolio-hover">
@@ -485,7 +381,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-sm-5 mb-4">
+                        <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalSoftwareRaytracer">
                                     <div class="portfolio-hover">
@@ -503,7 +399,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-sm-5 mb-4">
+                        <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalDX11">
                                     <div class="portfolio-hover">
@@ -521,7 +417,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-sm-5 mb-4">
+                        <div class="col-lg-6 col-sm-6 mb-4">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModalVulkan">
                                     <div class="portfolio-hover">
@@ -631,64 +527,6 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <h3 class="mb-0">Game Design</h3>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalMalaga1">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="assets/img/portfolio/Malaga/FloraTheExplorer/Thumpnail3.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Haptic Feedback Suit</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 4 Feb 2020</div>
-                                    <div class="portfolio-caption-subheading text-muted"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalRapidPrototyping">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Rapid/Adventure/start.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Rapid Prototyping</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 2018</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalGameDesighn1">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-gamepad fa-4x"></i>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/GameDesign/Thumb.avif"
-                                        alt="julian rijken image portfolio">
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Rapid Prototyping</div>
-                                    <div class="portfolio-caption-subheading text-muted">Unreal Blueprints, 2023</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
             </div>
         </section>
@@ -794,15 +632,15 @@
                                         </div>
                                         <ul>
                                             <li>Photoshop</li>
-                                            <li>Premiere Pro</li>                                        
+                                            <li>Premiere Pro</li>
                                             <li>Gimp</li>
                                             <li>Illustrator</li>
                                             <li>Maya</li>
                                             <li>Blender</li>
                                             <li>Hammer</li>
-                                            <li>OBS</li>      
-                                            <li>Substance Painter</li>        
-                                            <li>Houdini</li>            
+                                            <li>OBS</li>
+                                            <li>Substance Painter</li>
+                                            <li>Houdini</li>
                                         </ul>
                                     </div>
                                     <div class="SkillItem">
@@ -942,22 +780,179 @@
                 </div>
             </div>
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>    <!-- Stop looking at this... thanks -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <hr class="m-5">
+        <!-- Archive-->
+        <section class="resume-section" id="archive">
+            <div class="resume-section-content">
+                <!-- <h2 class="mb-5">Projects</h2> -->
+                <section id="portfolio">
+                    <h3 class="mb-0">Archived Projects</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalMalaga1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid"
+                                        src="assets/img/portfolio/Malaga/FloraTheExplorer/Thumpnail3.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Haptic Feedback Suit</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 4 Feb 2020</div>
+                                    <div class="portfolio-caption-subheading text-muted"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalRapidPrototyping">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/Rapid/Adventure/start.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Rapid Prototyping</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 2018</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalGameDesighn1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/GameDesign/Thumb.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Rapid Prototyping</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unreal Blueprints, 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalMalaga2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid"
+                                        src="assets/img/portfolio/Malaga/Malaga Game Jam 2020/Thumpnail2.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Malaga Game Jam</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 31 Jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid"
+                                        src="assets/img/portfolio/One Button Drift Game/Thumpnail.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">One Button</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 1 Jul 2019</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModalStrawberry">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/Strawberry/Strawberry.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Strawberry Game Jam</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unreal 5, 19 May 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/Water Museum/water-game_game.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Water Museum</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 17 Nov 2019</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/Twinstick/gun.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Twin Stick Shooter</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 6 May 2019</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-gamepad fa-4x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/Morph/Screenshot_37.avif"
+                                        alt="julian rijken image portfolio">
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Morph</div>
+                                    <div class="portfolio-caption-subheading text-muted">Unity C#, 11 Feb 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
     </div>
     <!-- Portfolio Modals-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -2257,12 +2252,9 @@
                                 <p>I can also make 3D models, have a look!</p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <iframe title="A 3D model" width="100%" height="480"
-                                                src="https://sketchfab.com/models/d07f6f63202440739a95d80a0e93e9b6/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                                frameborder="0" allow="autoplay; fullscreen; vr"
-                                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                        </div>
+                                        <div id="sketchfab-embed-1" class="sketchfab-embed"
+                                            data-sketchfab-src="https://sketchfab.com/models/d07f6f63202440739a95d80a0e93e9b6/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                            style="display: none;"></div>
                                     </div>
                                 </div>
                                 <br>
@@ -2270,21 +2262,17 @@
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/3DModels/Render_1_Compress.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/3DModels/Render_1_Compress.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/3DModels/Render_2_Compress.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/3DModels/Render_2_Compress.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                     </div>
@@ -2292,45 +2280,33 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <iframe title="A 3D model" width="100%" height="480"
-                                                src="https://sketchfab.com/models/44d2d4e93aef4a9e922aede55c384093/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                                frameborder="0" allow="autoplay; fullscreen; vr"
-                                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                        </div>
+                                        <div id="sketchfab-embed-1" class="sketchfab-embed"
+                                            data-sketchfab-src="https://sketchfab.com/models/44d2d4e93aef4a9e922aede55c384093/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                            style="display: none;"></div>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <iframe title="A 3D model" width="100%" height="480"
-                                                src="https://sketchfab.com/models/26ae487ff8b44d02b3583f9bfa92dddc/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                                frameborder="0" allow="autoplay; fullscreen; vr"
-                                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                        </div>
+                                        <div id="sketchfab-embed-1" class="sketchfab-embed"
+                                            data-sketchfab-src="https://sketchfab.com/models/26ae487ff8b44d02b3583f9bfa92dddc/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                            style="display: none;"></div>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <iframe title="A 3D model" width="100%" height="480"
-                                                src="https://sketchfab.com/3d-models/t-34-85-tank-ca24cc254922473a91ec213aebd83292/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                                frameborder="0" allow="autoplay; fullscreen; vr"
-                                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                        </div>
+                                        <div id="sketchfab-embed-1" class="sketchfab-embed"
+                                            data-sketchfab-src="https://sketchfab.com/models/ca24cc254922473a91ec213aebd83292/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                            style="display: none;"></div>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <iframe title="A 3D model" width="100%" height="480"
-                                                src="https://sketchfab.com/3d-models/modernvilla-529db8766e4c4486828218a252e1a933/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
-                                                frameborder="0" allow="autoplay; fullscreen; vr"
-                                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                                        </div>
+                                        <div id="sketchfab-embed-1" class="sketchfab-embed"
+                                            data-sketchfab-src="https://sketchfab.com/models/529db8766e4c4486828218a252e1a933/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                            style="display: none;"></div>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary" data-dismiss="modal" target="_blank" type="button">
@@ -2363,21 +2339,17 @@
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/01.Styleguide.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/01.Styleguide.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/02.Assets.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/02.Assets.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
@@ -2401,51 +2373,41 @@
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/02_Styleguide.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/02_Styleguide.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/03_DesignProcess_02.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/03_DesignProcess_02.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/03_DesignProcess_03.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/03_DesignProcess_03.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/03_DesignProcess_05.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/03_DesignProcess_05.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12 mb-12">
-                                                <div class="sketchfab-embed-wrapper">
-                                                    <img class="img-fluid project-images"
-                                                        src="assets/img/portfolio/2D/03_DesignProcess_06.avif"
-                                                        alt="julian rijken image portfolio">
-                                                </div>
+                                                <img class="img-fluid project-images"
+                                                    src="assets/img/portfolio/2D/03_DesignProcess_06.avif"
+                                                    alt="julian rijken image portfolio">
                                             </div>
                                         </div>
                                     </div>
@@ -2488,81 +2450,65 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/BackRoom_Main_Lit.jpg.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/BackRoom_Main_Lit.jpg.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/Corridor_Extra_Lit.jpg.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/Corridor_Extra_Lit.jpg.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/Corridor_Main_Lit.png.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/Corridor_Main_Lit.png.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/LargeRoom_Extra_Lit.jpg.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/LargeRoom_Extra_Lit.jpg.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/LargeRoom_Main_Lit.jpg.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/LargeRoom_Main_Lit.jpg.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/MyMeshes.png.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/MyMeshes.png.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/MyTextures.png.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/MyTextures.png.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <img class="img-fluid project-images"
-                                                src="assets/img/portfolio/Environments/Station_Extra_1_Lit.jpg.avif"
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <img class="img-fluid project-images"
+                                            src="assets/img/portfolio/Environments/Station_Extra_1_Lit.jpg.avif"
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -3352,11 +3298,9 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <video muted class="img-fluid project-images"
-                                                src="assets/img/portfolio/ShootNScoot/1.webm" loop
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <video muted class="img-fluid project-images"
+                                            src="assets/img/portfolio/ShootNScoot/1.webm" loop
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -3375,11 +3319,9 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <video muted class="img-fluid project-images"
-                                                src="assets/img/portfolio/ShootNScoot/2.webm" loop
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <video muted class="img-fluid project-images"
+                                            src="assets/img/portfolio/ShootNScoot/2.webm" loop
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -3398,11 +3340,9 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <div class="sketchfab-embed-wrapper">
-                                            <video muted class="img-fluid project-images"
-                                                src="assets/img/portfolio/ShootNScoot/3.webm" loop
-                                                alt="julian rijken image portfolio">
-                                        </div>
+                                        <video muted class="img-fluid project-images"
+                                            src="assets/img/portfolio/ShootNScoot/3.webm" loop
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -4039,8 +3979,8 @@ void tp::GameState::SpawnObstacle()
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpObstacles.webm"
-                                            loop alt="julian rijken image portfolio">
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpObstacles.webm" loop
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -4159,8 +4099,8 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
                                         <video class="img-fluid project-images"
-                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpGameOver.webm"
-                                            loop alt="julian rijken image portfolio">
+                                            src="assets/img/portfolio/Jugen/TappyPlane/PlaneJumpGameOver.webm" loop
+                                            alt="julian rijken image portfolio">
                                     </div>
                                 </div>
                                 <br>
@@ -4820,6 +4760,11 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
                     this.pause();
                     this.currentTime = 0; // Optional: Reset the video to the beginning
                 });
+
+                // Unload Sketchfab embeds
+                $(this).find('.sketchfab-embed').each(function () {
+                    $(this).empty().hide(); // Remove the iframe and hide the container
+                });
             });
 
             // When the modal is shown, autoplay the video
@@ -4828,6 +4773,22 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
                 videos.each(function () {
                     this.play();
                 });
+
+                // Load Sketchfab embeds
+                $(this).find('.sketchfab-embed').each(function () {
+                    var sketchfabContainer = $(this);
+                    if (!sketchfabContainer.children('iframe').length) {
+                        var src = sketchfabContainer.data('sketchfab-src');
+                        sketchfabContainer.html(`
+                            <iframe title="A 3D model" width="100%" height="480"
+                                src="${src}"
+                                frameborder="0" allow="autoplay; fullscreen; vr"
+                                mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        `);
+                        sketchfabContainer.show();
+                    }
+                });
+
             });
         });
 
@@ -4838,4 +4799,5 @@ Input::Input::RegisterCommand<ResetGameCommand>((int)tp::InputBind::Reset, 0, tr
         });
     </script>
 </body>
+
 </html>
