@@ -57,7 +57,10 @@
  }
 
  .profilePic {
-     border-radius: 2rem;
+    border-radius: 1.5rem;
+    width: auto;
+    height: auto; 
+    align-items: center;
  }
 
  .custom-code

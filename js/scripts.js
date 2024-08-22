@@ -1,10 +1,5 @@
-/*!
-    * Start Bootstrap - Resume v6.0.0 (https://startbootstrap.com/template-overviews/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
-    */
-    (function ($) {
-    "use strict"; // Start of use strict
+(function ($) {
+    "use strict"; 
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -22,7 +17,7 @@
                     {
                         scrollTop: target.offset().top,
                     },
-                    1000,
+                    500,
                     "easeInOutExpo"
                 );
                 return false;

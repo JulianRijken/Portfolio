@@ -2698,7 +2698,7 @@ textarea.form-control.is-invalid {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -6245,8 +6245,9 @@ a.close.disabled {
 }
 
 .modal.fade .modal-dialog {
-  transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
+  transition: transform 0.2s ease-out;
+  transform: scale(0.9,0.9);
+  transform-origin: top;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6319,13 +6320,14 @@ a.close.disabled {
   pointer-events: auto;
 
 
+  /* Default */
   background-image:
   linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(245, 245, 215,0.8)),
   url("../assets/img/Background/MainBackgroundBlur.avif");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
 }
 
 .modal-backdrop {
@@ -6343,7 +6345,7 @@ a.close.disabled {
 }
 
 .modal-backdrop.show {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .modal-header {
@@ -11132,7 +11134,7 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  max-width: 80rem;
 }
 
 section.resume-section .resume-section-content {
@@ -11160,13 +11162,26 @@ section.resume-section .resume-section-content {
   margin-left: auto;
   margin-right: auto;
   box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.39);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0rem;
+  background-color: rgba(255, 255, 255, 20%);
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+#portfolio .portfolio-item:hover {
+  transform: perspective(130em) rotateX(5deg) scale(1.00);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.9);
+  transition: 0.2s all ease-in-out;
+  z-index: 1;
+}
+
 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
- 
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -11174,8 +11189,8 @@ section.resume-section .resume-section-content {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: -1px 1px 95px -6px rgba(51,80,97,1) inset;
-
+  box-shadow: -1px 1px 95px -6px rgba(0,0,0,1) inset;
+  border-radius: 1rem;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11185,6 +11200,7 @@ section.resume-section .resume-section-content {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
+  opacity: 0;
 }
 
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
@@ -11192,25 +11208,35 @@ section.resume-section .resume-section-content {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
+
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-   font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
    font-family: 'JetBrains Mono', monospace;
+   font-size: 1rem;
    font-weight: 400;
 }
 
+#portfolio .portfolio-item .portfolio-link img {
+  border-radius: 1rem; /* Apply border-radius to the image */
+}
+
+
+
 .portfolio-modal .modal-dialog {
-  padding-left: 1rem;
   max-width: 90rem;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .portfolio-modal .modal-content {
