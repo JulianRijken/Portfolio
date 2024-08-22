@@ -50,7 +50,6 @@
  }
 
 
-
  .box {
      display: inherit;
      width: 100%;
@@ -107,3 +106,40 @@
     position: absolute;
     left : 1em;
   } */
+
+
+  .slide-right {
+    animation: 1s slide-right 0s forwards;
+      transform:translateX(-150%);
+  }
+
+  .slide-right-slow{
+    animation: 1s slide-right 1s forwards;
+      transform:translateX(-150%);
+  }
+
+
+  .navbar 
+  {
+    animation: 0.5s slide-right 3s forwards;
+    transform:translateX(-100%);
+  }
+  
+  
+  @keyframes slide-right {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+  .slide-up {
+    animation: 1s slide-right 1.8s forwards;
+    transform:translateY(50%);
+  }
+
+
+  @keyframes slide-right {
+    to {
+      transform:translateY(0);
+    }
+  }
