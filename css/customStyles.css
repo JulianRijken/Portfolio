@@ -76,3 +76,34 @@
     
     font-size: 16px; /* Change this to your desired font size */
 }
+
+
+.skill-item
+{
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 40%);
+    box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.1);
+}
+
+
+  .skill-list li {
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    list-style-type: circle;
+  }
+
+  .skill-primary {
+    line-height: 1.5;
+    padding-bottom: 0.2rem;
+    list-style-type: disc !important;
+  }
+  
+  /* .skill-primary li:before {
+    content: "> ";
+    position: absolute;
+    left : 1em;
+  } */

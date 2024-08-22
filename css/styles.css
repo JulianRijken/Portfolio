@@ -393,7 +393,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-   font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -2686,7 +2686,7 @@ textarea.form-control.is-invalid {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #1c1f22;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2694,12 +2694,13 @@ textarea.form-control.is-invalid {
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  border: 5px solid transparent;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
   line-height: 1.5;
+  min-height: 3.5rem;
   border-radius: 1.5rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out,transform 0.2s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2711,6 +2712,9 @@ textarea.form-control.is-invalid {
 .btn:hover {
   color: #212529;
   text-decoration: none;
+  transform: perspective(130em) rotateX(5deg) scale(1.05);
+  transition: 0.1s all ease-in-out;
+  z-index: 1;
 }
 
 .btn:focus,
@@ -4481,11 +4485,16 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  transform: scale(1);
+  transition: 0.05s all ease-in-out;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  transform: scale(1.2);
+  transform-origin: center;
+  transition: 0.05s all ease-in-out;
 }
 
 .nav-link.disabled {
@@ -11025,7 +11034,6 @@ p.lead {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.3rem;
-
 }
 
 #sideNav .navbar-toggler:focus {
@@ -11042,6 +11050,7 @@ p.lead {
     flex-direction: column;
     width: 13rem;
     height: 100vh;
+    box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.39);
   }
 
   #sideNav .navbar-brand {
@@ -11090,7 +11099,7 @@ p.lead {
   width: 3.5rem;
   background-color: #202020;
   color: #fff;
-  border-radius: 50%;
+  border-radius: 1rem;
   font-size: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem
