@@ -133,12 +133,12 @@
   }
 
   .slide-up {
-    animation: 1s slide-right 1.8s forwards;
-    transform:translateY(50%);
+    animation: 2.8s slide-up 0s forwards;
+    transform:translateY(100%);
   }
 
 
-  @keyframes slide-right {
+  @keyframes slide-up {
     to {
       transform:translateY(0);
     }
