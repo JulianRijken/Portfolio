@@ -43,7 +43,7 @@
 
 (function () {
     var parallax = document.querySelectorAll("body"),
-        speed = 0.3;
+        speed = 0.5;
 
     // Create the overlay element
     var overlay = document.createElement("div");
@@ -61,7 +61,7 @@
     function handleScroll() {
         [].slice.call(parallax).forEach(function (el, i) {
             var windowYOffset = window.pageYOffset,
-                elBackgroundPos = "20% " + (windowYOffset * speed) + "px";
+                elBackgroundPos = "40% " + (windowYOffset * speed) + "px";
 
             el.style.backgroundPosition = elBackgroundPos;
 
@@ -160,10 +160,7 @@ $(document).ready(function () {
                 youtubeContainer.html(`
             <iframe class="youtube" width="100%" height="100%"
                                     src="${src}"
-                                    frameborder="0" allowfullscreen></iframe>
-
-
-`);
+                                    frameborder="0" allowfullscreen></iframe>`);
                 youtubeContainer.show();
             }
         });
