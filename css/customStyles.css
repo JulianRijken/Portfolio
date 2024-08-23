@@ -79,11 +79,9 @@
 
 .skill-item
 {
+    overflow: hidden;
+    padding: 3rem;
     border-radius: 1rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-    margin: 0.5rem;
     background-color: rgba(255, 255, 255, 40%);
     box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.1);
 }
