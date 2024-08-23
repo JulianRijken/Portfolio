@@ -143,7 +143,7 @@ $(document).ready(function () {
             if (!sketchfabContainer.children('iframe').length) {
                 var src = sketchfabContainer.data('sketchfab-src');
                 sketchfabContainer.html(`
-                    <iframe title="A 3D model" width="100%" height="480"
+                    <iframe class="youtube" title="A 3D model" width="100%" height="480"
                         src="${src}"
                         frameborder="0" allow="autoplay; fullscreen; vr"
                         mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

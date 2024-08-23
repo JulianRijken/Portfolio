@@ -1,17 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700;800;900&display=swap');
 
-/*!
-* Start Bootstrap - Resume v6.0.0 (https://startbootstrap.com/template-overviews/resume)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7060,7 +7049,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: rgba(20,20,20,1) !important;
+    background-color: rgba(0,0,0,0.85) !important;
 }
 
 a.bg-primary:hover,
@@ -11012,14 +11001,26 @@ a.text-dark:focus {
 body {
     padding-top: 3.375rem;
     color: #42474C;
+    padding-left: 0rem;
+    transition: 0.5s padding-left;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 13rem;
+    transition: 0.5s padding-left;
   }
 }
+
+@media (min-width: 1700px) {
+  body {
+    padding-top: 0;
+    padding-left: 0rem;
+    transition: 0.5s padding-left;
+  }
+}
+
 
 h1,
 h2,
