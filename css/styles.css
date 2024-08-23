@@ -5004,8 +5004,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
-  transform: scale(1.2);
-  transition: all 0.15s ease-in-out,
+
 }
 
 .navbar-dark .navbar-toggler {
@@ -11192,12 +11191,12 @@ section.resume-section .resume-section-content {
   overflow: hidden;
   padding: 0rem;
   background-color: rgba(255, 255, 255, 20%);
-  transform: scale(0.95);
+  transform: scale(0.96);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 #portfolio .portfolio-item:hover {
-  transform: perspective(130rem) translateY(-0.2rem) rotateX(5deg) scale(1.00);
+  transform: perspective(130rem) translateY(-0.2rem) rotateX(5deg) scale(1.03);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.9);
   transition: 0.2s all ease-in-out;
   z-index: 1;

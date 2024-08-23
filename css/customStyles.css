@@ -1,143 +1,151 @@
  .custom-icons {
-     padding: 0.25rem 0.1rem;
-     font-size: 1.25rem;
-     line-height: 1;
-     background-color: transparent;
-     border: 0px solid transparent !important;
-     border-radius: 0rem;
+   padding: 0.25rem 0.1rem;
+   font-size: 1.25rem;
+   line-height: 1;
+   background-color: transparent;
+   border: 0px solid transparent !important;
+   border-radius: 0rem;
  }
 
 
  @media (min-width: 992px) {
-     .custom-icons-big {
-         padding-bottom: 1.5em;
-     }
+   .custom-icons-big {
+     padding-bottom: 1.5em;
+   }
  }
 
 
  @media (max-width: 991.98px) {
-     .custom-icons-big {
-         display: none;
-     }
+   .custom-icons-big {
+     display: none;
+   }
  }
 
  .sketchfab-logo {
-     width: 25px;
-     height: 25px;
-     background-image: url("../assets/img/icons/SketchFab-Logo.svg");
-     background-size: contain;
+   width: 25px;
+   height: 25px;
+   background-image: url("../assets/img/icons/SketchFab-Logo.svg");
+   background-size: contain;
  }
 
  .sketchfab-logo:hover {
-     opacity: 0.5;
-   
+   opacity: 0.5;
+
  }
 
  .matrix-logo {
-    width: 25px;
-    height: 25px;
-    background-image: url("../assets/img/icons/Matrix_icon_\(white\).svg");
-    background-size: contain;
-}
+   width: 25px;
+   height: 25px;
+   background-image: url("../assets/img/icons/Matrix_icon_\(white\).svg");
+   background-size: contain;
+ }
 
-.matrix-logo:hover {
-    opacity: 0.5;
-  
-}
+ .matrix-logo:hover {
+   opacity: 0.5;
+
+ }
 
  .project-images {
-     margin: 0em !important;
+   margin: 0em !important;
  }
 
 
  .box {
-     display: inherit;
-     width: 100%;
+   display: inherit;
+   width: 100%;
  }
 
  .profilePic {
-    border-radius: 1.5rem;
-    width: auto;
-    height: auto; 
-    align-items: center;
+   border-radius: 1.5rem;
+   width: auto;
+   height: auto;
+   align-items: center;
  }
 
- .custom-code
- {
-    text-align: left;
-    overflow: hidden;
-    text-size-adjust: 0.5;
+ .custom-code {
+   text-align: left;
+   overflow: hidden;
+   text-size-adjust: 0.5;
  }
 
- pre, code { font-family: Hack, monospace; }
- 
+ pre,
+ code {
+   font-family: Hack, monospace;
+ }
+
  .hljs {
-    
-    font-size: 16px; /* Change this to your desired font size */
-}
+
+   font-size: 16px;
+   /* Change this to your desired font size */
+ }
 
 
-.skill-item
-{
-    overflow: hidden;
-    padding: 3rem;
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 40%);
-    box-shadow: -1px 1px 19px 2px rgba(79,71,110,0.1);
-}
+ .skill-item {
+   overflow: hidden;
+   padding: 3rem;
+   border-radius: 1rem;
+   background-color: rgba(255, 255, 255, 40%);
+   box-shadow: -1px 1px 19px 2px rgba(79, 71, 110, 0.1);
+ }
 
 
-  .skill-list li {
-    line-height: 1.5;
-    padding-bottom: 0.2rem;
-    list-style-type: circle;
-  }
+ .skill-list li {
+   line-height: 1.5;
+   padding-bottom: 0.2rem;
+   list-style-type: circle;
+ }
 
-  .skill-primary {
-    line-height: 1.5;
-    padding-bottom: 0.2rem;
-    list-style-type: disc !important;
-  }
-  
-  /* .skill-primary li:before {
-    content: "> ";
-    position: absolute;
-    left : 1em;
-  } */
+ .skill-primary {
+   line-height: 1.5;
+   padding-bottom: 0.2rem;
+   list-style-type: disc !important;
+ }
 
+ .slide-right {
+   animation: 0.8s slide-right 0s forwards;
+   transform: translateX(-150%);
+ }
 
-  .slide-right {
-    animation: 1s slide-right 0s forwards;
-      transform:translateX(-150%);
-  }
-
-  .slide-right-slow{
-    animation: 1s slide-right 1s forwards;
-      transform:translateX(-150%);
-  }
+ .slide-right-slow {
+   animation: 0.8s slide-right 0.5s forwards;
+   transform: translateX(-150%);
+ }
 
 
-  .navbar 
-  {
-    animation: 0.5s slide-right 3s forwards;
-    transform:translateX(-100%);
-  }
-  
-  
-  @keyframes slide-right {
-    to {
-      transform:translateX(0);
-    }
-  }
-
-  .slide-up {
-    animation: 2.8s slide-up 0s forwards;
-    transform:translateY(100%);
-  }
+ .navbar {
+   animation: 0.5s slide-right 1.5s forwards;
+   transform: translateX(-100%);
+ }
 
 
-  @keyframes slide-up {
-    to {
-      transform:translateY(0);
-    }
-  }
+ .navbar-logo {
+   width: 1.8rem;
+   height: auto;
+   align-items: center;
+ }
+
+ @media (min-width: 992px) {
+   .navbar-logo {
+     width: 3.8rem;
+     height: auto;
+     align-items: center;
+   }
+ }
+
+
+ .slide-up {
+   animation: 1.5s slide-up 0s forwards;
+   transform: translateY(30%);
+ }
+
+ @keyframes slide-right {
+   to {
+     transform: translateX(0);
+   }
+ }
+
+ @keyframes slide-up {
+   to {
+     transform: translateY(0);
+   }
+ }
