@@ -152,9 +152,92 @@
 
  .page-content
  {
-    
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
  }
+
+.tags
+{
+  position: absolute;
+  top: 0%; 
+  right: 0%;
+  transform: translate(-0.8rem, 0.8rem);
+  height: auto;
+  width: auto;
+  max-width: 11rem;
+}
+
+.tag
+{
+  transform: translate(10rem, 0rem);
+  transition: all 0.3s;
+  border-radius: 0.4rem;
+  background-color: #331cff;
+  display: inline-flex;
+  float: right;
+  margin-left: 0.3rem;
+  margin-bottom: 0.3rem;
+
+  width: auto;
+  height: auto;
+  padding: 0.3rem 0.5rem;
+  align-items: flex-end;
+ 
+  font-weight: 900;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  text-align: center;
+}
+
+#portfolio .portfolio-item:hover .tag{
+  opacity: 1;
+  transform: translate(0rem, 0rem);
+  transition: all 0.2s;
+}
+
+
+.tag p {
+  margin: 0;
+ }
+ 
+
+.tag.custom-engine
+{
+  color: rgb(0, 0, 0);
+  background-color: #d9ff00;
+}
+
+.tag.solo
+{
+  color: rgb(0, 0, 0);
+  background-color: #00ff37;
+}
+
+.tag.blog
+{
+  color: rgb(0, 0, 0);
+  background-color: #fb93ff;
+}
+
+.tag.team
+{
+  color: rgb(0, 0, 0);
+  background-color: #00ffb3;
+}
+
+.tag.playable-web
+{
+  color: rgb(255, 255, 255);
+  background-color: #002fff;
+}
+
+.tag.game-jam
+{
+  color: rgb(255, 255, 255);
+  background-color: #bd5dc0;
+}
+
+

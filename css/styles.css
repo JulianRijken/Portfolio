@@ -11193,6 +11193,9 @@ section.resume-section .resume-section-content {
 }
 
 
+
+
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -11223,7 +11226,9 @@ section.resume-section .resume-section-content {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1rem;
+  padding: 0rem;
+  height: 5.8rem;
+  align-content: center;
   text-align: center;
 }
 
