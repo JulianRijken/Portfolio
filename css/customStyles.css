@@ -100,6 +100,14 @@
    padding-bottom: 0.2rem;
    list-style-type: disc !important;
  }
+ .skill-secondary {
+
+  line-height: 1.5;
+  padding-bottom: 10rem;
+  color: #757575;
+  list-style-type: circle !important;
+}
+
 
  .slide-right {
    animation: 0.8s slide-right 0s forwards;
@@ -174,7 +182,7 @@
   transform: translate(15rem, 0rem);
   transition: all 0.3s;
   border-radius: 0.4rem;
-  background-color: #331cff;
+  background-color: #331cff5e;
   display: inline-flex;
   float: right;
   margin-left: 0.3rem;
@@ -193,7 +201,7 @@
 }
 
 #portfolio .portfolio-item:hover .tag{
-  opacity: 1;
+  opacity: 0.85;
   transform: translate(0rem, 0rem);
   transition: all 0.2s;
 }
