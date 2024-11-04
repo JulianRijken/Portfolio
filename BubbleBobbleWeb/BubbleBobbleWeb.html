@@ -142,13 +142,25 @@
     transform: translateY(-50%);
   }
 
-  #spaceButton {
+  #rightContainer {
     position: fixed;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Optional: Adds spacing between the buttons */
+  }
+
+
+  #spaceButton {
+    width: 180px;
+    height: 250px;
+  }
+
+  #restartButton {
+    width: 180px;
+    height: 90px;
   }
 }
 
@@ -160,12 +172,23 @@
     left: 8%;
   }
 
-  #spaceButton {
+  #rightContainer {
     position: fixed;
     right: 8%;
     bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #spaceButton {
     width: 100px;
-    height: 215px;
+    height: 160px;
+  }
+
+  #restartButton {
+    width: 100px;
+    height: 30px;
   }
 
   #upButton {
@@ -240,8 +263,10 @@
       <button class="button" id="rightButton"><i class="fas fa-arrow-right"></i></button><br>
       <button class="button" id="downButton"><i class="fas fa-arrow-down"></i></button>
     </div>
-    <button class="button" id="spaceButton"><i class="fas fa-rocket"></i></button>
-    
+    <div id="rightContainer">
+      <button class="button" id="spaceButton"><i class="fas fa-bullseye"></i></button>
+      <button class="button" id="restartButton"><i class="fas fa-undo"></i></button>
+    </div>
 
     
     <script type='text/javascript'>
@@ -333,16 +358,24 @@
       let keyState = {};
 
       const dispatchEvent = (keyCode, eventType) => {
-        const event = new KeyboardEvent(eventType, {
-          key: String.fromCharCode(keyCode),
-          code: `Key${String.fromCharCode(keyCode)}`,
-          which: keyCode,
-          keyCode: keyCode,
-          bubbles: true
-        });
+  const keyEventConfig = {
+    bubbles: true,
+    keyCode: keyCode,
+    which: keyCode
+  };
 
-        window.dispatchEvent(event);
-      };
+  if (keyCode === 27) {
+    // Special handling for the Escape key
+    keyEventConfig.key = "Escape";
+    keyEventConfig.code = "Escape";
+  } else {
+    keyEventConfig.key = String.fromCharCode(keyCode);
+    keyEventConfig.code = `Key${String.fromCharCode(keyCode)}`;
+  }
+
+  const event = new KeyboardEvent(eventType, keyEventConfig);
+  window.dispatchEvent(event);
+};
 
       const startKeyPress = (keyCode) => {
         if (!keyState[keyCode]) {
@@ -359,9 +392,14 @@
       };
 
       const spaceButton = document.getElementById('spaceButton');
-      spaceButton.addEventListener('touchstart', () => startKeyPress(32));
-      spaceButton.addEventListener('touchend', () => stopKeyPress(32));
+      spaceButton.addEventListener('touchstart', () => startKeyPress(69));
+      spaceButton.addEventListener('touchend', () => stopKeyPress(69));
 
+      const restartButton = document.getElementById('restartButton');
+      restartButton.addEventListener('touchstart', () => startKeyPress(27));
+      restartButton.addEventListener('touchend', () => stopKeyPress(27));
+
+      
       const upButton = document.getElementById('upButton');
       upButton.addEventListener('touchstart', () => startKeyPress(87));
       upButton.addEventListener('touchend', () => stopKeyPress(87));
