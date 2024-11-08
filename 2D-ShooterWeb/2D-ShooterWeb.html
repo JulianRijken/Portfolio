@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ParryTank_Unity</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #unity-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #231F20;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="unity-canvas" width="1920" height="1080" tabindex="-1"></canvas>
+    <script src="Build/2D-Shooter.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/2D-Shooter.data",
+        frameworkUrl: "Build/2D-Shooter.framework.js",
+        codeUrl: "Build/2D-Shooter.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "ParryTank_Unity",
+        productVersion: "0.1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
