@@ -11202,6 +11202,7 @@ section.resume-section .resume-section-content {
   margin: 0 auto;
 }
 
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
@@ -11213,6 +11214,16 @@ section.resume-section .resume-section-content {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+}
+
+.wip 
+{
+  color: rgba(150,0,0,1)  !important;
+}
+
+.wip-hover:hover 
+{
+  box-shadow: -1px 1px 200px -6px rgba(200,0,0,1) inset !important; 
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
