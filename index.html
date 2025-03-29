@@ -240,8 +240,8 @@
                                             alt="julian rijken image portfolio">
                                     </a>
                                     <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Traffic Simulation Research Paper</div>
-                                        <div class="portfolio-caption-subheading text-muted">Julgen, 15 May 2024
+                                        <div class="portfolio-caption-heading">Breakout</div>
+                                        <div class="portfolio-caption-subheading text-muted">Breakin, 22 Nov 2024 
                                         </div>
                                     </div>
                                     <div class="tags">
@@ -534,7 +534,7 @@
                                                 <i class="fa fa-gamepad fa-4x"></i>
                                             </div>
                                         </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/TrafficSimulation/Logo2.avif"
+                                        <img class="img-fluid" src="assets/img/portfolio/TrafficSimulation/Logo.avif"
                                             alt="julian rijken image portfolio">
                                     </a>
                                     <div class="portfolio-caption">
@@ -2822,6 +2822,65 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModalTrafficSimulation" aria-hidden="true" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <i class="fa fa-times fa-3x"></i>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Physics-Based Traffic Simulation for Games</h2>
+                                <br>
+                                <br>
+                                <h3 class="text-uppercase">Abstract</h3>
+                                <p>
+                                    This paper investigates the implementation details for a physics-based traffic
+                                    simulation to be used in a gaming environment, focusing on agent behavior and
+                                    traffic rule adherence. Leveraging Unity as a testing platform, the research
+                                    evaluates the impact of different path-following, inertia management,
+                                    collision avoidance, and intersection management strategies. This shows how
+                                    different techniques and variables play a role in the final traffic
+                                    simulation.
+                                    <br><br>
+                                    A foundational understanding of vehicle dynamics is developed through the
+                                    integration of a virtual Proportional-Integral-Derivative (PID) controller for
+                                    path alignment, speed regulation, and obstacle avoidance. The study introduces
+                                    innovative methodologies such as lookahead interpolation for smoother path
+                                    adherence and combined speed limit / stop point methods for managing the
+                                    agent’s inertia.
+                                    <br><br>
+                                    This study aims to leave the reader with a complete understanding of the
+                                    workings for a simple, effective physics-based traffic simulation capable of
+                                    interacting with the player and environment.
+                                </p>
+                                <a class="social-icon-nav" href="assets/img/portfolio/TrafficSimulation/GW2425_Rijken_Julian_EN_Paper.pdf"
+                                target="_blank">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-scroll mr-1"></i>
+                                    Open PDF
+                                </button>
+                                </a>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 mb-12">
+                                        <embed src="assets/img/portfolio/TrafficSimulation/GW2425_Rijken_Julian_EN_Paper.pdf" width="100%" height="1000" 
+                                            type="application/pdf">
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" data-dismiss="modal" target="_blank" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModalRapidPrototyping" aria-hidden="true" role="dialog"
         tabindex="-1">
         <div class="modal-dialog">
@@ -3653,6 +3712,93 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModalBreakout" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"
+            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.342), rgba(22, 21, 23, 0.559)), url(assets/img/Background/BB_Background.avif)">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times fa-3x"></i>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body white-modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase mb-5">Breakout</h2>
+                            <h3 class="text-uppercase">About the game</h3>
+                            <p>
+                                Breakout was made for a test in the span of 5 days and used as an experiment with a different engine architecture, similar to Godot.
+                                The game includes different difficulties and puts heavy emphasis on game feel over features.
+                            </p>
+                            <h3 class="text-uppercase">What i did</h3>
+                            <p>
+                                The engine takes a lot of inspiration from Julgen (an engine I made before) but opts for a Node-based system similar to Godot's.
+                                This is done for simplicity, allowing for maximum flexibility over performance.
+                                The game was made from the ground up and takes inspiration from the original Breakout Atari game.
+                            </p>
+                            <a class="social-icon-nav" href="https://github.com/JulianRijken/Breakout"
+                                target="_blank">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fab fa-git-alt mr-1"></i>
+                                    View on Github
+                                </button>
+                            </a>
+                            <a class="social-icon-nav"
+                                href="https://JulianRijken.com/BreakoutWeb/Breakout" target="_blank">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-play mr-1"></i>
+                                    Play Game Web
+                                </button>
+                            </a>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 mb-12">
+                                    <video class="img-fluid" width="100%" height="auto" controls loop>
+                                        <source src="assets/img/portfolio/Breakout/BreakoutGameplay.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="table-responsive" style="color: inherit;">
+                                <table class="table" style="color: inherit;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <b class="projectDescription-bold"
+                                                    style="color: inherit;">&nbsp;&nbsp;&nbsp;Engine</b>
+                                            </th>
+                                            <th scope="col">
+                                                <b class="projectDescription-bold"
+                                                    style="color: inherit;">Language</b>
+                                            </th>
+                                            <th scope="col">
+                                                <b class="projectDescription-bold"
+                                                    style="color: inherit;">Programmer</b>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;Breakin</td>
+                                            <td>C++</td>
+                                            <td>Julian Rijken</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="btn btn-primary" data-dismiss="modal" target="_blank" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="portfolio-modal modal fade" id="portfolioModalBubbleBobble" tabindex="-1" role="dialog"
         aria-hidden="true">
         <div class="modal-dialog">
