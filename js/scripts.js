@@ -42,7 +42,7 @@
 
 
 (function () {
-    var parallax = document.querySelectorAll("body"),
+    var body = document.body,
         speed = 0.5;
 
     // Create the overlay element
@@ -57,22 +57,30 @@
     // Append the overlay to the body
     document.body.appendChild(overlay);
 
-    // Function to handle scroll event
+    // Both writes below invalidate paint for the whole viewport, so they are
+    // coalesced into one animation frame instead of running per scroll event.
+    var ticking = false;
+
+    function updateParallax() {
+        ticking = false;
+
+        var windowYOffset = window.pageYOffset;
+
+        body.style.backgroundPosition = "40% " + (windowYOffset * speed) + "px";
+        overlay.style.backgroundColor = calculateBackgroundColor(windowYOffset);
+    }
+
     function handleScroll() {
-        [].slice.call(parallax).forEach(function (el, i) {
-            var windowYOffset = window.pageYOffset,
-                elBackgroundPos = "40% " + (windowYOffset * speed) + "px";
+        if (ticking) {
+            return;
+        }
 
-            el.style.backgroundPosition = elBackgroundPos;
-
-            // Calculate background color based on scroll position
-            var color = calculateBackgroundColor(windowYOffset);
-            overlay.style.backgroundColor = color;
-        });
+        ticking = true;
+        window.requestAnimationFrame(updateParallax);
     }
 
     // Attach scroll event listener
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     // Function to handle DOMContentLoaded event
     function handleDOMContentLoaded() {
@@ -101,11 +109,30 @@
 
 
 function CopyText() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+    var copyText = document.getElementById("myInput"),
+        value = copyText.value;
+
+    // execCommand("copy") is deprecated; fall back to it only where the
+    // async Clipboard API is unavailable or blocked (insecure origin).
+    function legacyCopy() {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+    }
+
+    function confirmCopy() {
+        alert("Copied the text: " + value);
+    }
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(value).then(confirmCopy, function () {
+            legacyCopy();
+            confirmCopy();
+        });
+    } else {
+        legacyCopy();
+        confirmCopy();
+    }
 }
 
 
