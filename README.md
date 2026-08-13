@@ -55,16 +55,42 @@ navbar and scrollspy depend on it.
 
 ## Commit naming
 
-Commits follow [Conventional Commits](https://www.conventionalcommits.org/):
+Commits follow
+[Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/):
 
 ```
-type: short description in the imperative
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
 ```
 
-Lower case after the colon, no trailing full stop. Add a body when the *why*
-is not obvious from the diff.
+A required type, an optional scope in parentheses, an optional `!`, then a
+colon and a space before the description. A body may follow one blank line
+after the description. Footers come one blank line after the body, each a token
+using `-` in place of spaces — `Reviewed-by: name` — with `BREAKING CHANGE` the
+one permitted exception.
 
-### Types in use
+The scope is a noun naming a part of the codebase, and is worth using when a
+change is confined to one: `fix(modal): …`, `perf(assets): …`.
+
+House style on top of the spec, which allows any casing but asks for
+consistency: lower case after the colon, imperative mood, no trailing full
+stop. Add a body whenever the *why* is not obvious from the diff.
+
+### Types
+
+The spec itself defines only two, and both carry meaning for the version
+number:
+
+| Type   | Spec meaning                | Version effect |
+| ------ | --------------------------- | -------------- |
+| `feat` | Adds a new feature          | MINOR          |
+| `fix`  | Fixes a bug                 | PATCH          |
+
+Any other type is explicitly allowed (rule 14) and has no automatic effect on
+the version. The set used here, with real examples from this history:
 
 | Type    | For                                              | Example from this repo                                     |
 | ------- | ------------------------------------------------ | ---------------------------------------------------------- |
@@ -76,13 +102,32 @@ is not obvious from the diff.
 | `docs`  | Documentation only, no site change               | `docs: add a changelog and surface the version in the footer` |
 | `chore` | Housekeeping with no user-visible effect         | `chore: remove orphaned Zelda GIF`                          |
 
-`a11y` is not one of the standard Conventional Commits types; it is used here
-because accessibility work is common enough on this site to be worth spotting
-at a glance. Everything else is standard.
+`perf`, `build`, `docs` and `chore` are not from the spec either — they come
+from the widely used `@commitlint/config-conventional` set. `a11y` is a local
+addition on top of that, because accessibility work is common enough here to be
+worth spotting at a glance.
 
 The type drives the changelog: `feat` lands under **Added**, `fix` under
 **Fixed**, `perf` and `build` under **Changed**, `chore` under **Removed** where
 something was deleted. `docs` usually does not appear at all.
+
+### Breaking changes
+
+A `!` immediately before the colon marks a breaking change, and a
+`BREAKING CHANGE:` footer does the same. If the `!` is used the footer may be
+omitted, and the description stands as the explanation:
+
+```
+feat!: rebuild the site on a new layout
+```
+
+`BREAKING CHANGE` must be uppercase; it is the one token the spec treats as
+case-sensitive.
+
+A website has no API to break, so this is reserved for a redesign or rebuild —
+a change that makes a returning visitor's mental model of the site wrong. That
+is what drives a MAJOR bump, and it is the one place this repo reads the spec
+loosely; see below.
 
 ### History before this convention
 
@@ -103,15 +148,23 @@ git log --format=%s | grep -cE "^[a-z0-9]+(\([^)]*\))?!?: "
 
 Semantic versioning, read for a website:
 
-| Part      | Bumped when                                     |
-| --------- | ----------------------------------------------- |
-| **MAJOR** | The site is redesigned or rebuilt                |
-| **MINOR** | New projects, sections or capabilities are added |
-| **PATCH** | Fixes and polish, with no new content            |
+| Part      | Bumped when                                     | Commit type                        |
+| --------- | ----------------------------------------------- | ---------------------------------- |
+| **MAJOR** | The site is redesigned or rebuilt                | any type with `!` / BREAKING CHANGE |
+| **MINOR** | New projects, sections or capabilities are added | `feat`                             |
+| **PATCH** | Fixes and polish, with no new content            | `fix`, and everything else          |
+
+MINOR and PATCH match Conventional Commits exactly. MAJOR is where this repo
+reads the spec loosely: the spec ties MAJOR to a breaking change, and a site
+has no API to break, so a redesign takes its place — the closest equivalent to
+breaking what someone already knew. Mark those commits with `!` so the
+intent is visible in the log rather than implied by the tag alone.
 
 Every release is an annotated git tag (`v4.3.0`) on the commit that shipped it,
 and is written up in [`CHANGELOG.md`](CHANGELOG.md). Releases before 4.3.0 were
-reconstructed from history and tagged retroactively.
+reconstructed from history and tagged retroactively — most of that history
+predates the convention, so their versions were inferred from what the commits
+did rather than read off their types.
 
 Cutting a release means three edits, none of them automated:
 
