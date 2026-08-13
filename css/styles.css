@@ -11172,7 +11172,7 @@ section.resume-section .resume-section-content {
 }
 
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   max-width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -11185,7 +11185,7 @@ section.resume-section .resume-section-content {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-#portfolio .portfolio-item:hover {
+.portfolio .portfolio-item:hover {
   transform: perspective(130rem) translateY(-0.2rem) rotateX(5deg) scale(1.03);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.9);
   transition: 0.2s all ease-in-out;
@@ -11196,14 +11196,14 @@ section.resume-section .resume-section-content {
 
 
 
-#portfolio .portfolio-item .portfolio-link {
+.portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
 
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+.portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11226,17 +11226,17 @@ section.resume-section .resume-section-content {
   box-shadow: -1px 1px 200px -6px rgba(200,0,0,1) inset !important; 
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
   opacity: 0;
 }
 
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+.portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+.portfolio .portfolio-item .portfolio-caption {
   padding: 0rem;
   height: 5.8rem;
   align-content: center;
@@ -11245,18 +11245,18 @@ section.resume-section .resume-section-content {
 
 
 
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+.portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+.portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
    font-size: 1rem;
    font-weight: 400;
 }
 
-#portfolio .portfolio-item .portfolio-link img {
+.portfolio .portfolio-item .portfolio-link img {
   border-radius: 1rem; /* Apply border-radius to the image */
 }
 

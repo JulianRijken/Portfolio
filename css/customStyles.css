@@ -195,7 +195,7 @@
   text-align: center;
 }
 
-#portfolio .portfolio-item:hover .tag{
+.portfolio .portfolio-item:hover .tag{
   opacity: 0.85;
   transform: translate(0rem, 0rem);
   transition: all 0.2s;
