@@ -260,3 +260,32 @@
   opacity: 0.8;
   text-decoration: underline;
 }
+
+/* Inline icon sprite, replacing Font Awesome's JS.
+   Mirrors .svg-inline--fa: height 1em with the width derived from each
+   symbol's viewBox, which is what FA's fa-w-* classes encoded. */
+.icon-sprite {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  font-size: inherit;
+  overflow: visible;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.icon.fa-1x {
+  font-size: 1em;
+}
+
+.icon.fa-3x {
+  font-size: 3em;
+}
+
+.icon.fa-4x {
+  font-size: 4em;
+}
