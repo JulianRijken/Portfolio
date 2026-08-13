@@ -1663,7 +1663,6 @@
                                                 <td>&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td>
-                                                    </a>
                                                     <a class="projectDescriptionLink"
                                                         href="https://thijmenhermans.wordpress.com/" target="_blank">
                                                         Thijmen
@@ -4138,7 +4137,7 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
 
-                                        <pre><code class="language-cpp, custom-code">#include &lt;Camera.h&gt;
+                                        <pre><code class="language-cpp custom-code">#include &lt;Camera.h&gt;
 #include &lt;Julgen.h&gt;
 #include &lt;Resources.h&gt;
 #include &lt;Scene.h&gt;
@@ -4191,7 +4190,7 @@ void jul::Julgen::GameStart()
                                         </p>
 
 
-                                        <pre><code class="language-cpp, custom-code" style="font-size: 11px;">void jul::Julgen::RunOneFrame()
+                                        <pre><code class="language-cpp custom-code" style="font-size: 11px;">void jul::Julgen::RunOneFrame()
 {
 #ifdef USE_STEAMWORKS
     SteamAPI_RunCallbacks(); // Valve Please Run :)
@@ -4252,7 +4251,7 @@ void jul::Julgen::GameStart()
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">void MainScene(jul::Scene&amp; scene)
+                                        <pre><code class="language-cpp custom-code">void MainScene(jul::Scene&amp; scene)
 {
     // Add camrea to the scene
     auto* camera = scene.AddGameObject(&quot;Camera&quot;);
@@ -4306,7 +4305,7 @@ void jul::Julgen::GameStart()
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">#ifndef PLANE_H
+                                        <pre><code class="language-cpp custom-code">#ifndef PLANE_H
 #define PLANE_H
 
 #include &lt;Component.h&gt;
@@ -4350,7 +4349,7 @@ tp::Plane::Plane(jul::GameObject* parentPtr) :
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">#ifndef PLANE_H
+                                        <pre><code class="language-cpp custom-code">#ifndef PLANE_H
 #define PLANE_H
 
 #include &lt;Component.h&gt;
@@ -4383,7 +4382,7 @@ namespace tp
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">#include &quot;Plane.h&quot;
+                                        <pre><code class="language-cpp custom-code">#include &quot;Plane.h&quot;
 
 #include &lt;GameTime.h&gt;
 #include &lt;MathExtensions.h&gt;
@@ -4429,7 +4428,7 @@ void tp::Plane::Update()
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">// Add Plane
+                                        <pre><code class="language-cpp custom-code">// Add Plane
 auto* planeGOPtr = scene.AddGameObject(&quot;Plane&quot;);
 planeGOPtr&#8209;&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;Plane&quot;));
 planeGOPtr&#8209;&gt;AddComponent&lt;jul::Animator&gt;()&#8209;&gt;Play(&quot;Idle&quot;, true);
@@ -4457,7 +4456,7 @@ jul::Input::Bind(InputBind::Bump, 0, true, planeComponentPtr, &amp;tp::Plane::On
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">#ifndef GAMESTATE_H
+                                        <pre><code class="language-cpp custom-code">#ifndef GAMESTATE_H
 #define GAMESTATE_H
 
 #include &lt;Component.h&gt;
@@ -4491,7 +4490,7 @@ namespace tp
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">#include &quot;GameState.h&quot;
+                                        <pre><code class="language-cpp custom-code">#include &quot;GameState.h&quot;
 #include &lt;AutoMove.h&gt;
 #include &lt;GameTime.h&gt;
 #include &lt;Resources.h&gt;
@@ -4565,7 +4564,7 @@ void tp::GameState::SpawnObstacle()
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">// Add Plane
+                                        <pre><code class="language-cpp custom-code">// Add Plane
 auto* planeGOPtr = scene.AddGameObject(&quot;Plane&quot;);
 auto* planeComponentPtr = planeGOPtr-&gt;AddComponent&lt;tp::Plane&gt;();
 planeGOPtr-&gt;AddComponent&lt;jul::SpriteRenderer&gt;(jul::Resources::GetSprite(&quot;Plane&quot;));
@@ -4599,7 +4598,7 @@ bottomSpikeGOPtr-&gt;AddComponent&lt;jul::BoxCollider&gt;(jul::BoxCollider::Sett
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">void tp::Plane::OnCollisionBegin(const jul::Collision&amp; /*unused*/) { KillPlayer(); }
+                                        <pre><code class="language-cpp custom-code">void tp::Plane::OnCollisionBegin(const jul::Collision&amp; /*unused*/) { KillPlayer(); }
 void tp::Plane::KillPlayer()
 {
     m_IsDead = true;
@@ -4616,7 +4615,7 @@ void tp::Plane::KillPlayer()
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">tp::GameState::GameState(jul::GameObject* parentPtr) :
+                                        <pre><code class="language-cpp custom-code">tp::GameState::GameState(jul::GameObject* parentPtr) :
 jul::Component(parentPtr, &quot;GameState&quot;)
 {
     jul::MessageQueue::AddListener(MessageType::PlayerDead, this, &amp;GameState::OnPlayerDead);
@@ -4649,7 +4648,7 @@ void tp::GameState::OnPlayerDead(const jul::Message&amp; /*unused*/)
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <pre><code class="language-cpp, custom-code">class ResetGameCommand final : public jul::BaseCommand
+                                        <pre><code class="language-cpp custom-code">class ResetGameCommand final : public jul::BaseCommand
 {
 public:
     void Execute(const jul::InputContext&amp; context) override
@@ -5049,7 +5048,7 @@ Input::Input::RegisterCommand&lt;ResetGameCommand&gt;((int)tp::InputBind::Reset,
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 mb-12">
-                                        <video class="img-fluid" width="100%" height="auto%" controls loop>
+                                        <video class="img-fluid" width="100%" height="auto" controls loop>
                                             <source src="assets/img/portfolio/BreadEnd/Bread End Gameplay.mp4"
                                                 type="video/mp4">
                                         </video>
