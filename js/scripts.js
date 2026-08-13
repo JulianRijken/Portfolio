@@ -109,11 +109,30 @@
 
 
 function CopyText() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+    var copyText = document.getElementById("myInput"),
+        value = copyText.value;
+
+    // execCommand("copy") is deprecated; fall back to it only where the
+    // async Clipboard API is unavailable or blocked (insecure origin).
+    function legacyCopy() {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+    }
+
+    function confirmCopy() {
+        alert("Copied the text: " + value);
+    }
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(value).then(confirmCopy, function () {
+            legacyCopy();
+            confirmCopy();
+        });
+    } else {
+        legacyCopy();
+        confirmCopy();
+    }
 }
 
 
