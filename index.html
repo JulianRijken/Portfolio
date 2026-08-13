@@ -11,16 +11,20 @@
         content="Julian Rijken, coding, portfolio, game developer, julian games, rijken julian, julianrijken, games, gamedev, gameplay programmer portfolio">
     <title>Julian Rijken Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/icons/SiteIcon.svg">
+    <!-- Warm up the origins the critical path still needs-->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- highlightjs -->
     <link rel="stylesheet" href="highlight/styles/atom-one-dark.css">
-    <script src="highlight/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script defer src="highlight/highlight.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () { hljs.highlightAll(); });</script>
     <!-- Hack Font-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
     <!--vt323 Font-->
-    <link rel="stylesheet" href=" //cdn.jsdelivr.net/npm/@fontsource/vt323@5.2.5/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vt323@5.2.5/index.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/customStyles.css" rel="stylesheet">
@@ -5237,12 +5241,12 @@ Input::Input::RegisterCommand&lt;ResetGameCommand&gt;((int)tp::InputBind::Reset,
         </div>
     </div>
     <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script defer src="js/scripts.js"></script>
     <input class="discord" type="text" value="julianrijken" id="myInput">
 </body>
 
